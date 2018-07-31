@@ -1,5 +1,5 @@
 title = "Airspace for Hugo"
-baseURL = "https://keriwheatley.github.io/capstone_website/"
+baseURL = "https://icareerclimber.github.io/capstone_website/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 publishDir = "docs"
