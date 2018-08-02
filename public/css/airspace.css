@@ -77,14 +77,15 @@ a:active {
 }
 
 .btn-main, .btn-transparent, .btn-small {
-    background: #655E7A;
+    background: #82888A;
     color: #fff;
     display: inline-block;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 800;
     letter-spacing: 1px;
     padding: 14px 35px;
     text-transform: uppercase;
-    border-radius: 0;
+    border-radius: 10;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
 }
@@ -151,7 +152,7 @@ font header .navbar-default .navbar-nav li a:hover {
   opacity: 0.8;
 }
 #slider .block {
-  color: #000000;
+  /*color: #000000;*/
 }
 #slider .block h1 {
   font-family: 'Roboto', sans-serif;
@@ -182,6 +183,7 @@ font header .navbar-default .navbar-nav li a:hover {
 #intro .block p {
   color: #7B7B7B;
   padding-top: 20px;
+  font-size: 20px;
 }
 #intro .block img {
   padding-left: 40px;
@@ -194,25 +196,25 @@ font header .navbar-default .navbar-nav li a:hover {
   padding-top: 20px;
 }
 /*--
-	service Start
+	Team Start
 --*/
-#service {
+#team {
   text-align: center;
   padding: 90px 0;
 }
-#service .service-item {
+#team .team-item {
   padding-bottom: 30px;
 }
-#service .service-item i {
+#team .team-item i {
   font-size: 60px;
-  color: #4A4656;
+  color: #333;
 }
-#service .service-item h4 {
+#team .team-item h4 {
   padding-top: 20px;
   margin: 0;
-  color: #666;
+  color: #333;
 }
-#service .service-item p {
+#team .team-item p {
   color: #888;
   padding-top: 10px;
   margin: 0;
@@ -255,7 +257,7 @@ font header .navbar-default .navbar-nav li a:hover {
   padding: 70px 0px;
   position: relative;
   text-align: center;
-  color: #fff;
+  /*color: #fff;*/
 }
 #call-to-action:before {
   content: "";
@@ -266,25 +268,27 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  /*background: #1d192c;*/
+  background: #5299d7;
   opacity: 0.8;
 }
 #call-to-action h2 {
   padding-bottom: 20px;
   line-height: 33px;
   margin: 0;
+  font-weight: 600;
   font-size: 30px;
 }
 #call-to-action p {
-  font-size: 14px;
+  font-size: 20px;
   line-height: 1.6;
+  font-weight: 600;
 }
 #call-to-action .btn-call-to-action {
   padding: 15px 35px;
   border: none;
   background-color: #fff;
   font-size: 15px;
-  color: #333333;
+  /*color: #333333;*/
   margin-top: 30px;
 }
 /*--
@@ -318,7 +322,9 @@ font header .navbar-default .navbar-nav li a:hover {
   margin-bottom: 30px;
 }
 #feature p {
-  color: #8d8f92;
+  font-size: 20px;
+  font-weight: 600;
+  /*color: #fff;*/
   margin-bottom: 20px;
 }
 #feature .btn-view-works {
@@ -914,4 +920,9 @@ footer .footer-manu ul li a:hover {
   font-family: 'Volkhov', serif;
   font-style: italic;
   color: #666;
+}
+
+.row-center {
+  display:flex; 
+  justify-content:center;
 }
