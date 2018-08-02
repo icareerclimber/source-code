@@ -1,8 +1,9 @@
 +++
-title = "Go is for lovers"
-date = "2015-09-17T13:47:08+02:00"
-tags = ["go"]
-categories = ["programming"]
+title = "3 Classification Models"
+date = "2018-07-29"
+tags = ["theme"]
+categories = ["starting"]
+author = "John Doe"
 +++
 
 Hugo uses the excellent [go][] [html/template][gohtmltemplate] library for

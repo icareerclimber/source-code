@@ -1,6 +1,6 @@
 +++
-title = "Migrate from Jekyll"
-date = "2015-10-10T13:07:31+02:00"
+title = "6 Front-End Architecture"
+date = "2018-07-26"
 tags = ["ipsum"]
 categories = ["lorem"]
 +++

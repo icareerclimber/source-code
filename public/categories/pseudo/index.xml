@@ -6,17 +6,17 @@
     <description>Recent content in Pseudo on Airspace for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 03 Aug 2015 13:39:46 +0200</lastBuildDate>
+    <lastBuildDate>Sat, 28 Jul 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://icareerclimber.github.io/categories/pseudo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Hugo is for lovers</title>
-      <link>https://icareerclimber.github.io/howitworks/hugo-is-for-lovers/</link>
-      <pubDate>Mon, 03 Aug 2015 13:39:46 +0200</pubDate>
+      <title>4 Visualization Design</title>
+      <link>https://icareerclimber.github.io/howitworks/4-application-design/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://icareerclimber.github.io/howitworks/hugo-is-for-lovers/</guid>
+      <guid>https://icareerclimber.github.io/howitworks/4-application-design/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo

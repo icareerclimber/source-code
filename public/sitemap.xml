@@ -3,38 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://icareerclimber.github.io/howitworks/migrate-from-jekyll/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <loc>https://icareerclimber.github.io/howitworks/1-getting-the-data/</loc>
+    <lastmod>2018-07-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://icareerclimber.github.io/howitworks/linked-post/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <loc>https://icareerclimber.github.io/howitworks/2-data-transformation/</loc>
+    <lastmod>2018-07-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://icareerclimber.github.io/howitworks/go-is-for-lovers/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+    <loc>https://icareerclimber.github.io/howitworks/3-classification-models/</loc>
+    <lastmod>2018-07-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://icareerclimber.github.io/howitworks/hugo-is-for-lovers/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+    <loc>https://icareerclimber.github.io/howitworks/4-application-design/</loc>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://icareerclimber.github.io/howitworks/creating-a-new-theme/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
+    <loc>https://icareerclimber.github.io/howitworks/5-back-end-architecture/</loc>
+    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://icareerclimber.github.io/howitworks/getting-the-data/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
+    <loc>https://icareerclimber.github.io/howitworks/6-front-end-architecture/</loc>
+    <lastmod>2018-07-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2018-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -48,32 +48,26 @@
   </url>
   
   <url>
-    <loc>https://icareerclimber.github.io/tags/go/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://icareerclimber.github.io/tags/golang/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/howitworks/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2018-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/tags/hugo/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/tags/ipsum/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2018-07-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -83,7 +77,7 @@
   
   <url>
     <loc>https://icareerclimber.github.io/categories/lorem/</loc>
-    <lastmod>2015-10-10T13:07:31+02:00</lastmod>
+    <lastmod>2018-07-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -97,37 +91,37 @@
   
   <url>
     <loc>https://icareerclimber.github.io/tags/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/categories/programming/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/categories/pseudo/</loc>
-    <lastmod>2015-08-03T13:39:46+02:00</lastmod>
+    <lastmod>2018-07-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/categories/starting/</loc>
-    <lastmod>2015-06-24T13:50:46+02:00</lastmod>
+    <lastmod>2018-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/tags/</loc>
-    <lastmod>2015-09-17T13:47:08+02:00</lastmod>
+    <lastmod>2018-07-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://icareerclimber.github.io/tags/theme/</loc>
-    <lastmod>2015-10-02T21:49:20+02:00</lastmod>
+    <lastmod>2018-07-31T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -59,8 +59,7 @@ theme = "airspace-hugo"
 
   [params.call]
     enable = true
-    title = "TEST OUR PRODUCT TODAY"
-    paragraph = "Click below to be redirected to app."
+    title = "TEST OUR PRODUCT"
     [params.call.button]
       button = "test"
       url = "http://35.233.221.248/"
