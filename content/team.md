@@ -1,4 +1,4 @@
 +++
 title = "Our Team"
-id = "service"
+id = "team"
 +++

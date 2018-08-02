@@ -3,23 +3,32 @@ title: Our Team
 subtitle: >
 content:
 
-  - icon: ion-coffee
+  - image: keri.jpg
     name: Karin Belsvik Brodd
     text1: >
       Software Engineer at G2 Web Services
     text2: >
       Seattle, Washington
+    email:
+    linkedin:
+    github:
 
-  - icon: ion-compass
+  - image: keri.jpg
     name: Keri Wheatley
     text1: >
       Data Scientist at Civitas Learning
     text2: >
       Austin, Texas
+    email: wheatley.keri@gmail.com
+    linkedin: https://www.linkedin.com/in/keri-wheatley/
+    github: https://github.com/keriwheatley/
 
-  - icon: ion-image
+  - image: keri.jpg
     name: Yuhang Zhao
     text1: >
       Principal Member Of Technical Staff at AthenaHealth
     text2: >
       Cambridge, Massachusetts
+    email:
+    linkedin:
+    github:

@@ -8,19 +8,19 @@ theme = "airspace-hugo"
   [[menu.header]]
     weight = 2
     name = "How It Works"
-    url = "/work"
+    url = "/howitworks"
   [[menu.header]]
     weight = 3
     name = "Live Demo"
     url = "/demo"
   [[menu.header]]
     weight = 4
-    name = "Team"
-    url = "/team"
+    name = "Next Steps"
+    url = "/nextsteps"
   [[menu.header]]
     weight = 5
-    name = "Contact"
-    url = "/contact"
+    name = "Team"
+    url = "/team"
 
 # The site's parameters
 [params]
@@ -51,11 +51,11 @@ theme = "airspace-hugo"
 
   [params.feature]
     enable = true
-    title = "We believe in great ideas"
-    content = "Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+    title = "Test Our Product Today"
+    content = "Click below to be redirected to app."
     [params.feature.button]
-      caption = "View Works"
-      url = "#"
+      caption = "Access iCareer Climber"
+      url = "http://35.233.221.248/"
 
   [params.call]
     enable = true

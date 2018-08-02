@@ -1,4 +1,4 @@
 +++
 title = "How It Works"
-id = "work"
+id = "howitworks"
 +++
