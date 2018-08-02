@@ -1,5 +1,5 @@
 title = "Airspace for Hugo"
-baseURL = "https://www.example.com"
+baseURL = "https://icareerclimber.github.io/"
 languageCode = "en-us"
 theme = "airspace-hugo"
 
@@ -21,27 +21,6 @@ theme = "airspace-hugo"
     weight = 5
     name = "Contact"
     url = "/contact"
-
-  [[menu.footer]]
-    weight = 1
-    name = "About us"
-    url = "#"
-  [[menu.footer]]
-    weight = 2
-    name = "Contact us"
-    url = "#"
-  [[menu.footer]]
-    weight = 3
-    name = "How it works"
-    url = "#"
-  [[menu.footer]]
-    weight = 4
-    name = "Blog"
-    url = "#"
-  [[menu.footer]]
-    weight = 5
-    name = "Terms"
-    url = "#"
 
 # The site's parameters
 [params]
@@ -80,8 +59,8 @@ theme = "airspace-hugo"
 
   [params.call]
     enable = true
-    title = "We design delightful digital experiences."
-    paragraph = "Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design."
+    title = "iCareer Climber"
+    paragraph = "A roadmap that guides you to your ideal job in the next 5 years"
 
   [params.contact]
     enable = true

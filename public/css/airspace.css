@@ -266,7 +266,7 @@ font header .navbar-default .navbar-nav li a:hover {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: #1d192c;
+  /*background: #1d192c;*/
   opacity: 0.8;
 }
 #call-to-action h2 {
@@ -738,11 +738,12 @@ font header .navbar-default .navbar-nav li a:hover {
 #contact-form .block button {
   width: 100%;
   height: 60px;
-  background: #47424C;
+  background: #82888A;
   border: none;
   color: #fff;
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
+  font-weight: 800;
 }
 /*--
 	wrapper-contact Start
@@ -900,3 +901,17 @@ footer .footer-manu ul li a:hover {
   color: #666;
 }
 
+.work-title {
+  margin-bottom: 70px;
+}
+.work-title h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 600;
+}
+.work-title p {
+  font-family: 'Volkhov', serif;
+  font-style: italic;
+  color: #666;
+}
