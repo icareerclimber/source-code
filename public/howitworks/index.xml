@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Howitworks on Airspace for Hugo</title>
+    <link>https://icareerclimber.github.io/howitworks/</link>
+    <description>Recent content in Howitworks on Airspace for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Jul 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://icareerclimber.github.io/howitworks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Pipeline</title>
+      <link>https://icareerclimber.github.io/howitworks/data-pipeline/</link>
+      <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://icareerclimber.github.io/howitworks/data-pipeline/</guid>
+      <description>[1] Data Collection Using Python Selenium and Beautiful Soup libraries to build web scraping tools, our team collected from the web over 600k unique resumes and 1.1 million salary records representing over 5500 cities across 20 years.
+Link to Code
+
+[2] Data Transformation Data ingestion pipelines were created to standardize the data inputs from various sources.
+
+Jobs Title Job titles vary widely from resume to resume, so we created a heuristic to process each job title into a standard format.</description>
+    </item>
+    
+    <item>
+      <title>The Models</title>
+      <link>https://icareerclimber.github.io/howitworks/the-models/</link>
+      <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://icareerclimber.github.io/howitworks/the-models/</guid>
+      <description>[1] Document Similarity Model Link to Code
+We provide career recommendations in a ranked order based on the similarity of a job seeker&amp;rsquo;s current/past job experiences. Our model is powered by resume information all across the US.
+This product is a proof of concept and contains a small subset of possible jobs. Our model contains 114 unique job titles. The list of job titles is derived from the availability of salary information.</description>
+    </item>
+    
+    <item>
+      <title>Visualization Design</title>
+      <link>https://icareerclimber.github.io/howitworks/visualization-design/</link>
+      <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://icareerclimber.github.io/howitworks/visualization-design/</guid>
+      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
+Save it somewhere specific as we will be using it in the next step.
+More complete instructions are available at installing hugo
+Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
+Follow the following steps:
+ Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+    </item>
+    
+    <item>
+      <title>Back-End Architecture</title>
+      <link>https://icareerclimber.github.io/howitworks/back-end-architecture/</link>
+      <pubDate>Fri, 27 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://icareerclimber.github.io/howitworks/back-end-architecture/</guid>
+      <description>I&amp;rsquo;m a linked post in the menu. You can add other posts by adding the following line to the frontmatter:
+menu = &amp;quot;main&amp;quot;  Lorem ipsum dolor sit amet, consectetur adipiscing elit. In mauris nulla, vestibulum vel auctor sed, posuere eu lorem. Aliquam consequat augue ut accumsan mollis. Suspendisse malesuada sodales tincidunt. Vivamus sed erat ac augue bibendum porta sed id ipsum. Ut mollis mauris eget ligula sagittis cursus. Aliquam id pharetra tellus.</description>
+    </item>
+    
+    <item>
+      <title>Front-End Architecture</title>
+      <link>https://icareerclimber.github.io/howitworks/front-end-architecture/</link>
+      <pubDate>Thu, 26 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://icareerclimber.github.io/howitworks/front-end-architecture/</guid>
+      <description>Move static content to static Jekyll has a rule that any directory not starting with _ will be copied as-is to the _site output. Hugo keeps all static content under static. You should therefore move it all there. With Jekyll, something that looked like
+▾ &amp;lt;root&amp;gt;/ ▾ images/ logo.png  should become
+▾ &amp;lt;root&amp;gt;/ ▾ static/ ▾ images/ logo.png  Additionally, you&amp;rsquo;ll want any files that should reside at the root (such as CNAME) to be moved to static.</description>
+    </item>
+    
+  </channel>
+</rss>

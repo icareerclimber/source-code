@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+
+
+
+
+
+
+<title>The Models</title>
+
+<meta name="generator" content="Hugo 0.45.1" />
+
+
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/owl.carousel.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/airspace-local-fonts.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/airspace.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/style.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/ionicons.min.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/animate.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/responsive.css" />
+<link rel="stylesheet" href="https://icareerclimber.github.io/css/syntax.css" />
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+<script src="https://icareerclimber.github.io/js/bootstrap.min.js"></script>
+<script src="https://icareerclimber.github.io/js/owl.carousel.min.js"></script>
+<script src="https://icareerclimber.github.io/js/plugins.js"></script>
+<script src="https://icareerclimber.github.io/js/min/waypoints.min.js"></script>
+<script src="https://icareerclimber.github.io/js/jquery.counterup.js"></script>
+
+
+<script src="https://icareerclimber.github.io/js/main.js"></script>
+
+
+
+</head>
+<body>
+
+	
+<header>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://icareerclimber.github.io/">
+              <img src="https://icareerclimber.github.io/img/logo.png" alt="Airspace for Hugo Logo">
+            </a>
+          </div>
+            
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://icareerclimber.github.io/">Home</a></li>
+              
+                <li><a href="/howitworks/">How It Works</a></li>
+              
+                <li><a href="/demo/">Live Demo</a></li>
+              
+                <li><a href="/team/">Team</a></li>
+              
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+	<div class="post">
+	  
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
+							
+	            <h1>The Models</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">By <span class="bold">iCareer Climber Team</span> on <span class="bold">6 July 2018</span></p>
+	            </div>
+	            <hr />
+	            <p>
+
+<p></br></p>
+
+<h2 id="1-document-similarity-model">[1] Document Similarity Model</h2>
+
+<p><a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb">Link to Code</a></p>
+
+<p>We provide career recommendations in a ranked order based on the similarity of a job seeker&rsquo;s current/past job experiences. Our model is powered by resume information all across the US.</p>
+
+<p>This product is a proof of concept and contains a small subset of possible jobs. Our model contains 114 unique job titles. The list of job titles is derived from the availability of salary information. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years. We had used 230k job summaries to train and test our model.</p>
+
+<p></br></p>
+
+<h3 id="model-parameters">Model Parameters</h3>
+
+<pre><code>Number of Classes:
+    114
+
+Train-Test Split:
+    222,978 / 11,736 (95% / 5%)
+
+TD-IDF Vectorizer:
+    Min_df: 5
+    Ngram_range: [1,3]
+
+Undersampling:
+    More common jobs were undersampled to 2500 records based on job recency.
+
+Oversampling:
+    Less common jobs were oversampled to 2500 records using the regular Synthetic Minority Over-sampling Technique (SMOTE).
+
+Multinomial Naive Bayes Classifier:
+    Alpha: 0.02
+</code></pre>
+
+<p></br></p>
+
+<h3 id="model-performance">Model Performance</h3>
+
+<p></br></p>
+
+<p><strong>Performance</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>&emsp;Metric&emsp;</th>
+<th>&emsp;Result&emsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&emsp;Accuracy&emsp;</td>
+<td>&emsp;48.86%&emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;F1 Score&emsp;</td>
+<td>&emsp;46.14%&emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;Precision Score&emsp;</td>
+<td>&emsp;47.60%&emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;Recall Score&emsp;</td>
+<td>&emsp;47.55%&emsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p></br></p>
+
+<p><strong>Lowest/Highest Precision</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>&emsp;  Class &emsp;</th>
+<th align="right">&emsp;  Precision &emsp;</th>
+<th align="right">&emsp;  Support &emsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&emsp;  consultant  &emsp;</td>
+<td align="right">&emsp;  9.09% &emsp;</td>
+<td align="right">&emsp;  131 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  business consultant &emsp;</td>
+<td align="right">&emsp;  11.76%  &emsp;</td>
+<td align="right">&emsp;  48  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  director  &emsp;</td>
+<td align="right">&emsp;  16.67%  &emsp;</td>
+<td align="right">&emsp;  119 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  manager &emsp;</td>
+<td align="right">&emsp;  21.21%  &emsp;</td>
+<td align="right">&emsp;  127 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  it specialist &emsp;</td>
+<td align="right">&emsp;  22.22%  &emsp;</td>
+<td align="right">&emsp;  64  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  build and release engineer  &emsp;</td>
+<td align="right">&emsp;  82.22%  &emsp;</td>
+<td align="right">&emsp;  131 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  database administrator  &emsp;</td>
+<td align="right">&emsp;  83.47%  &emsp;</td>
+<td align="right">&emsp;  123 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  caregiver &emsp;</td>
+<td align="right">&emsp;  86.67%  &emsp;</td>
+<td align="right">&emsp;  66  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  android engineer  &emsp;</td>
+<td align="right">&emsp;  88.89%  &emsp;</td>
+<td align="right">&emsp;  61  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  ios engineer  &emsp;</td>
+<td align="right">&emsp;  89.58%  &emsp;</td>
+<td align="right">&emsp;  52  &emsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p></br></p>
+
+<p><strong>Lowest/Highest Recall</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>&emsp;  Class &emsp;</th>
+<th align="right">&emsp;  Recall  &emsp;</th>
+<th align="right">&emsp;  Support &emsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&emsp;  consultant  &emsp;</td>
+<td align="right">&emsp;  1.53% &emsp;</td>
+<td align="right">&emsp;  131 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  business consultant &emsp;</td>
+<td align="right">&emsp;  4.17% &emsp;</td>
+<td align="right">&emsp;  48  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  manager &emsp;</td>
+<td align="right">&emsp;  5.51% &emsp;</td>
+<td align="right">&emsp;  127 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  engineer  &emsp;</td>
+<td align="right">&emsp;  7.63% &emsp;</td>
+<td align="right">&emsp;  118 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  director  &emsp;</td>
+<td align="right">&emsp;  10.92%  &emsp;</td>
+<td align="right">&emsp;  119 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  build and release engineer  &emsp;</td>
+<td align="right">&emsp;  84.73%  &emsp;</td>
+<td align="right">&emsp;  131 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  salesforce engineer &emsp;</td>
+<td align="right">&emsp;  85.09%  &emsp;</td>
+<td align="right">&emsp;  114 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  android engineer  &emsp;</td>
+<td align="right">&emsp;  91.80%  &emsp;</td>
+<td align="right">&emsp;  61  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  net engineer  &emsp;</td>
+<td align="right">&emsp;  91.82%  &emsp;</td>
+<td align="right">&emsp;  110 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  technical recruiter &emsp;</td>
+<td align="right">&emsp;  94.95%  &emsp;</td>
+<td align="right">&emsp;  99  &emsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p></br></p>
+
+<p><strong>Lowest/Highest F-Score</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>&emsp;  Class &emsp;</th>
+<th align="right">&emsp;  F-Score &emsp;</th>
+<th align="right">&emsp;  Support &emsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&emsp;  consultant  &emsp;</td>
+<td align="right">&emsp;  2.61% &emsp;</td>
+<td align="right">&emsp;  131 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  business consultant &emsp;</td>
+<td align="right">&emsp;  6.15% &emsp;</td>
+<td align="right">&emsp;  48  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  manager &emsp;</td>
+<td align="right">&emsp;  8.75% &emsp;</td>
+<td align="right">&emsp;  127 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  engineer  &emsp;</td>
+<td align="right">&emsp;  12.77%  &emsp;</td>
+<td align="right">&emsp;  118 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  director  &emsp;</td>
+<td align="right">&emsp;  13.20%  &emsp;</td>
+<td align="right">&emsp;  119 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  database administrator  &emsp;</td>
+<td align="right">&emsp;  82.79%  &emsp;</td>
+<td align="right">&emsp;  123 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  build and release engineer  &emsp;</td>
+<td align="right">&emsp;  83.46%  &emsp;</td>
+<td align="right">&emsp;  131 &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  technical recruiter &emsp;</td>
+<td align="right">&emsp;  85.45%  &emsp;</td>
+<td align="right">&emsp;  99  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  ios engineer  &emsp;</td>
+<td align="right">&emsp;  86.00%  &emsp;</td>
+<td align="right">&emsp;  52  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  android engineer  &emsp;</td>
+<td align="right">&emsp;  90.32%  &emsp;</td>
+<td align="right">&emsp;  61  &emsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p></br></p>
+
+<p><strong>Most Confused</strong></p>
+
+<table>
+<thead>
+<tr>
+<th>&emsp;  Actual Class  &emsp;</th>
+<th>&emsp;  Predicted Class &emsp;</th>
+<th align="right">&emsp;  Cases &emsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&emsp;  accountant  &emsp;</td>
+<td>&emsp;  staff accountant  &emsp;</td>
+<td align="right">&emsp;  38  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  marketing director  &emsp;</td>
+<td>&emsp;  marketing manager &emsp;</td>
+<td align="right">&emsp;  35  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  java software engineer  &emsp;</td>
+<td>&emsp;  j2ee engineer &emsp;</td>
+<td align="right">&emsp;  32  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  associate &emsp;</td>
+<td>&emsp;  cashier &emsp;</td>
+<td align="right">&emsp;  31  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  network administrator &emsp;</td>
+<td>&emsp;  network engineer  &emsp;</td>
+<td align="right">&emsp;  30  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  manager &emsp;</td>
+<td>&emsp;  general manager &emsp;</td>
+<td align="right">&emsp;  28  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  assistant &emsp;</td>
+<td>&emsp;  administrative assistant  &emsp;</td>
+<td align="right">&emsp;  26  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  design engineer &emsp;</td>
+<td>&emsp;  mechanical design engineer  &emsp;</td>
+<td align="right">&emsp;  26  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  process engineer  &emsp;</td>
+<td>&emsp;  manufacturing engineer  &emsp;</td>
+<td align="right">&emsp;  25  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  project manager &emsp;</td>
+<td>&emsp;  it project manager  &emsp;</td>
+<td align="right">&emsp;  25  &emsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p></br></p>
+
+<h3 id="pca-analysis">PCA Analysis</h3>
+
+<p>We performed a PCA analysis to test the clustering from the TD-IDF vectorization. The vectors were reduced to a 3-dimensional space and put into the <a href="https://projector.tensorflow.org/">Embedding Projector</a> website. The below results reinforce the model performance results.</p>
+
+<p></br></p>
+
+<ol>
+<li>Below are the closest 500 points to a randomly selected <strong><em>consultant</em></strong> point. The language used in the consultant&rsquo;s resume is similar to jobs in many different domains.</li>
+</ol>
+
+<p>&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_consultant.png" width="1000"></p>
+
+<p></br></p>
+
+<ol>
+<li>Below are the closest 500 points to a randomly selected <strong><em>android engineer</em></strong> point. A majority of the closest points are android engineer.</li>
+</ol>
+
+<p>&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_android_engineer.png" width="1000"></p>
+
+<ol>
+<li>Just for fun, we selected a random <strong><em>data scientist</em></strong> point. Data Scientists appear to be at the intersection of data anlysis, data engineering, software engineering, product management, and research. ;)</li>
+</ol>
+
+<p>&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_data_scientist.png" width="1000"></p>
+
+<p>To play with the data yourself, you can input our <a href="https://drive.google.com/open?id=1y9wjQhVtUC7Z3APXqlJ8D-04CP5N4mWN">vector file</a> and <a href="https://drive.google.com/open?id=1w4LXTvw0G-g6Wg1_lZL5DHFl646J6cf4">metadata file</a> to this website: <a href="https://projector.tensorflow.org/">https://projector.tensorflow.org/</a></p>
+
+<p></br></p>
+
+<h3 id="example-output">Example Output</h3>
+
+<p><img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image.png" width="1000"></p>
+
+<p></br></p>
+
+<h2 id="2-job-skills-model">[2] Job Skills Model</h2>
+
+<p><a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb">Link to Code</a></p>
+
+<p>In order to produce useful skills information, we created a model similar to the one above with a few differences.</p>
+
+<p></br></p>
+
+<h3 id="model-parameter-differences">Model Parameter Differences</h3>
+
+<pre><code>Train-Test Split:
+    325,787 / 17,147
+
+TD-IDF Vectorizer:
+    Ngram_range: [3,3]
+
+Undersampling:
+    Common job undersampling to 5000 records
+
+Oversampling:
+    SMOTE oversampling to 5000 records
+</code></pre>
+
+<p></br></p>
+
+<h3 id="model-performance-1">Model Performance</h3>
+
+<table>
+<thead>
+<tr>
+<th>&emsp;Metric&emsp;</th>
+<th>&emsp;Result&emsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&emsp;Accuracy&emsp;</td>
+<td>&emsp;39.30%&emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;F1 Score&emsp;</td>
+<td>&emsp;35.57%&emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;Precision Score&emsp;</td>
+<td>&emsp;36.70%&emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;Recall Score&emsp;</td>
+<td>&emsp;36.12%&emsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p></br></p>
+
+<h3 id="example-outputs">Example Outputs</h3>
+
+<p></br></p>
+
+<p><img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_technical_writer.png" height="300">&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_front_end_engineer.png" height="300">&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_data_scientist.png" height="300"></p>
+
+<p></br></p>
+
+<h2 id="3-time-based-model-not-productionized">[3] Time-Based Model (Not Productionized)</h2>
+
+<p><a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/07_process_model_software_engineer_over_time.ipynb">Link to Code</a></p>
+
+<p>The resumes we collected contained a large number of <strong><em>software engineering</em></strong> roles, so we thought it would be interesting to create a classification model to derive the most important skills for different periods of time for software engineers. Below are the highest weighted skills for each timeframe. <strong>This model is not included in the app.</strong></p>
+
+<p></br></p>
+
+<h3 id="model-parameters-1">Model Parameters</h3>
+
+<pre><code>Number of Classes:
+    114
+
+TD-IDF Vectorizer:
+    Min_df: 0
+    Ngram_range: [2,4]
+
+Oversampling:
+    Less common jobs were oversampled to 2500 records using the regular Synthetic Minority Over-sampling Technique (SMOTE).
+
+Multinomial Naive Bayes Classifier:
+    Alpha: 0.1
+</code></pre>
+
+<p></br></p>
+
+<h3 id="model-performance-2">Model Performance</h3>
+
+<table>
+<thead>
+<tr>
+<th>&emsp;Metric&emsp;</th>
+<th>&emsp;Result&emsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&emsp;Accuracy&emsp;</td>
+<td>&emsp;54.52%%&emsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p></br></p>
+
+<h3 id="results">Results</h3>
+
+<p>Technology is one of the fastest changing industries. From this model, we can see the rise to prominence and the fall of different tools through time.</p>
+
+<table>
+<thead>
+<tr>
+<th>&emsp;  Earlier-1998    &emsp;</th>
+<th>&emsp;  1998-2003   &emsp;</th>
+<th>&emsp;  2003-2008   &emsp;</th>
+<th>&emsp;  2008-2013   &emsp;</th>
+<th>&emsp;  2013-2018   &emsp;</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>&emsp;  development team    &emsp;</td>
+<td>&emsp;  database design &emsp;</td>
+<td>&emsp;  unit testing    &emsp;</td>
+<td>&emsp;  management system   &emsp;</td>
+<td>&emsp;  version control &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  test plan   &emsp;</td>
+<td>&emsp;  rational rose   &emsp;</td>
+<td>&emsp;  crystal report  &emsp;</td>
+<td>&emsp;  html cs javascript  &emsp;</td>
+<td>&emsp;  unit testing    &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  window nt   &emsp;</td>
+<td>&emsp;  client server   &emsp;</td>
+<td>&emsp;  java j2ee   &emsp;</td>
+<td>&emsp;  test plan   &emsp;</td>
+<td>&emsp;  web application using   &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  software design &emsp;</td>
+<td>&emsp;  vb net  &emsp;</td>
+<td>&emsp;  net asp net &emsp;</td>
+<td>&emsp;  data access &emsp;</td>
+<td>&emsp;  visual studio   &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  customer support    &emsp;</td>
+<td>&emsp;  crystal report  &emsp;</td>
+<td>&emsp;  web base    &emsp;</td>
+<td>&emsp;  front end   &emsp;</td>
+<td>&emsp;  full stack  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  tcp ip  &emsp;</td>
+<td>&emsp;  using visual basic  &emsp;</td>
+<td>&emsp;  software development    &emsp;</td>
+<td>&emsp;  sql query   &emsp;</td>
+<td>&emsp;  develop maintain    &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  programmer analyst  &emsp;</td>
+<td>&emsp;  store procedure &emsp;</td>
+<td>&emsp;  oracle 9i   &emsp;</td>
+<td>&emsp;  design implement    &emsp;</td>
+<td>&emsp;  store procedure &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  cobol ii    &emsp;</td>
+<td>&emsp;  software application    &emsp;</td>
+<td>&emsp;  html cs &emsp;</td>
+<td>&emsp;  java j2ee   &emsp;</td>
+<td>&emsp;  technology use  &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  ibm mainframe   &emsp;</td>
+<td>&emsp;  tcp ip  &emsp;</td>
+<td>&emsp;  develop test    &emsp;</td>
+<td>&emsp;  visual studio   &emsp;</td>
+<td>&emsp;  new feature &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  client server   &emsp;</td>
+<td>&emsp;  pl sql  &emsp;</td>
+<td>&emsp;  store procedure &emsp;</td>
+<td>&emsp;  new feature &emsp;</td>
+<td>&emsp;  code review &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  system use  &emsp;</td>
+<td>&emsp;  technology use  &emsp;</td>
+<td>&emsp;  role responsibility &emsp;</td>
+<td>&emsp;  using asp net   &emsp;</td>
+<td>&emsp;  agile scrum &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  assembly language   &emsp;</td>
+<td>&emsp;  user interface  &emsp;</td>
+<td>&emsp;  window xp   &emsp;</td>
+<td>&emsp;  unit testing    &emsp;</td>
+<td>&emsp;  rest api    &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  user interface  &emsp;</td>
+<td>&emsp;  data warehouse  &emsp;</td>
+<td>&emsp;  team member &emsp;</td>
+<td>&emsp;  application use &emsp;</td>
+<td>&emsp;  design implement    &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  device driver   &emsp;</td>
+<td>&emsp;  development team    &emsp;</td>
+<td>&emsp;  design implementation   &emsp;</td>
+<td>&emsp;  user interface  &emsp;</td>
+<td>&emsp;  using asp net   &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  develop implement   &emsp;</td>
+<td>&emsp;  html javascript &emsp;</td>
+<td>&emsp;  business logic  &emsp;</td>
+<td>&emsp;  web base    &emsp;</td>
+<td>&emsp;  entity framework    &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  using visual basic  &emsp;</td>
+<td>&emsp;  responsibility include  &emsp;</td>
+<td>&emsp;  visual basic    &emsp;</td>
+<td>&emsp;  software engineer   &emsp;</td>
+<td>&emsp;  management system   &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  vax vms &emsp;</td>
+<td>&emsp;  operating system    &emsp;</td>
+<td>&emsp;  management system   &emsp;</td>
+<td>&emsp;  business logic  &emsp;</td>
+<td>&emsp;  development team    &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  pl sql  &emsp;</td>
+<td>&emsp;  technical support   &emsp;</td>
+<td>&emsp;  user interface  &emsp;</td>
+<td>&emsp;  code review &emsp;</td>
+<td>&emsp;  software engineer   &emsp;</td>
+</tr>
+
+<tr>
+<td>&emsp;  responsibility include  &emsp;</td>
+<td>&emsp;  web service &emsp;</td>
+<td>&emsp;  net sql server  &emsp;</td>
+<td>&emsp;  responsibility involve  &emsp;</td>
+<td>&emsp;  sql server  &emsp;</td>
+</tr>
+</tbody>
+</table>
+
+<p></br></p>
+
+<h2 id="4-next-steps">[4] Next Steps</h2>
+
+<ol>
+<li>Test different vectorization models, such as the Transformer Model</li>
+<li>Test neural network classification models, such as CNN</li>
+<li>Expand the number of classes</li>
+<li>Incorporate time-based modeling</li>
+</ol>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<p class="center-text" style="padding: 30px;">
+	  <a class="btn btn-small" href="https://icareerclimber.github.io//howitworks">Back to How It Works</a>
+	</p>
+
+	
+
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>TEST OUR PRODUCT</h2>
+          <p></p>
+        </div>
+        <a href="http://35.197.94.32/" class="btn btn-main">Access iCareer Climber</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+	
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="footer-manu">
+          <ul>
+            
+          </ul>
+        </div>
+        <p>Copyright &copy; Design &amp; Developed by Themefisher. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

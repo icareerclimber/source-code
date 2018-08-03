@@ -213,7 +213,7 @@ The resumes we collected contained a large number of ___software engineering___ 
 
 ```
 Number of Classes:
-    114
+    5
 
 TD-IDF Vectorizer:
     Min_df: 0
@@ -238,26 +238,26 @@ Multinomial Naive Bayes Classifier:
 
 ### Results
 
-Technology is one of the fastest changing industries. From this model, we can see the rise to prominence and the fall of different tools through time.
+Technology is one of the fastest changing industries. From this model, we can see the rise to prominence and the fall of different tools throughout time.
 
 |   &emsp;  Earlier-1998    &emsp;  |   &emsp;  1998-2003   &emsp;  |   &emsp;  2003-2008   &emsp;  |   &emsp;  2008-2013   &emsp;  |   &emsp;  2013-2018   &emsp;  |
 |       ---     |       ---     |       ---     |       ---     |       ---     |
 |   &emsp;  development team    &emsp;  |   &emsp;  database design &emsp;  |   &emsp;  unit testing    &emsp;  |   &emsp;  management system   &emsp;  |   &emsp;  version control &emsp;  |
-|   &emsp;  test plan   &emsp;  |   &emsp;  rational rose   &emsp;  |   &emsp;  crystal report  &emsp;  |   &emsp;  html cs javascript  &emsp;  |   &emsp;  unit testing    &emsp;  |
+|   &emsp;  test plan   &emsp;  |   &emsp;  rational rose   &emsp;  |   &emsp;  <span style="color:blue">___crystal report___</span>  &emsp;  |   &emsp;  html cs javascript  &emsp;  |   &emsp;  unit testing    &emsp;  |
 |   &emsp;  window nt   &emsp;  |   &emsp;  client server   &emsp;  |   &emsp;  java j2ee   &emsp;  |   &emsp;  test plan   &emsp;  |   &emsp;  web application using   &emsp;  |
-|   &emsp;  software design &emsp;  |   &emsp;  vb net  &emsp;  |   &emsp;  net asp net &emsp;  |   &emsp;  data access &emsp;  |   &emsp;  visual studio   &emsp;  |
-|   &emsp;  customer support    &emsp;  |   &emsp;  crystal report  &emsp;  |   &emsp;  web base    &emsp;  |   &emsp;  front end   &emsp;  |   &emsp;  full stack  &emsp;  |
-|   &emsp;  tcp ip  &emsp;  |   &emsp;  using visual basic  &emsp;  |   &emsp;  software development    &emsp;  |   &emsp;  sql query   &emsp;  |   &emsp;  develop maintain    &emsp;  |
+|   &emsp;  software design &emsp;  |   &emsp;  vb net  &emsp;  |   &emsp;  net asp net &emsp;  |   &emsp;  data access &emsp;  |   &emsp;  <span style="color:green">___visual studio___</span>   &emsp;  |
+|   &emsp;  customer support    &emsp;  |   &emsp;  <span style="color:blue">___crystal report___</span>  &emsp;  |   &emsp;  web base    &emsp;  |   &emsp;  front end   &emsp;  |   &emsp;  full stack  &emsp;  |
+|   &emsp;  tcp ip  &emsp;  |   &emsp;  <span style="color:purple">___using visual basic___</span>  &emsp;  |   &emsp;  software development    &emsp;  |   &emsp;  sql query   &emsp;  |   &emsp;  develop maintain    &emsp;  |
 |   &emsp;  programmer analyst  &emsp;  |   &emsp;  store procedure &emsp;  |   &emsp;  oracle 9i   &emsp;  |   &emsp;  design implement    &emsp;  |   &emsp;  store procedure &emsp;  |
 |   &emsp;  cobol ii    &emsp;  |   &emsp;  software application    &emsp;  |   &emsp;  html cs &emsp;  |   &emsp;  java j2ee   &emsp;  |   &emsp;  technology use  &emsp;  |
-|   &emsp;  ibm mainframe   &emsp;  |   &emsp;  tcp ip  &emsp;  |   &emsp;  develop test    &emsp;  |   &emsp;  visual studio   &emsp;  |   &emsp;  new feature &emsp;  |
+|   &emsp;  ibm mainframe   &emsp;  |   &emsp;  tcp ip  &emsp;  |   &emsp;  develop test    &emsp;  |   &emsp;  <span style="color:green">___visual studio___</span>   &emsp;  |   &emsp;  new feature &emsp;  |
 |   &emsp;  client server   &emsp;  |   &emsp;  pl sql  &emsp;  |   &emsp;  store procedure &emsp;  |   &emsp;  new feature &emsp;  |   &emsp;  code review &emsp;  |
 |   &emsp;  system use  &emsp;  |   &emsp;  technology use  &emsp;  |   &emsp;  role responsibility &emsp;  |   &emsp;  using asp net   &emsp;  |   &emsp;  agile scrum &emsp;  |
 |   &emsp;  assembly language   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  window xp   &emsp;  |   &emsp;  unit testing    &emsp;  |   &emsp;  rest api    &emsp;  |
 |   &emsp;  user interface  &emsp;  |   &emsp;  data warehouse  &emsp;  |   &emsp;  team member &emsp;  |   &emsp;  application use &emsp;  |   &emsp;  design implement    &emsp;  |
 |   &emsp;  device driver   &emsp;  |   &emsp;  development team    &emsp;  |   &emsp;  design implementation   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  using asp net   &emsp;  |
 |   &emsp;  develop implement   &emsp;  |   &emsp;  html javascript &emsp;  |   &emsp;  business logic  &emsp;  |   &emsp;  web base    &emsp;  |   &emsp;  entity framework    &emsp;  |
-|   &emsp;  using visual basic  &emsp;  |   &emsp;  responsibility include  &emsp;  |   &emsp;  visual basic    &emsp;  |   &emsp;  software engineer   &emsp;  |   &emsp;  management system   &emsp;  |
+|   &emsp;  <span style="color:purple">___using visual basic___</span>  &emsp;  |   &emsp;  responsibility include  &emsp;  |   &emsp;  <span style="color:purple">___visual basic___</span>    &emsp;  |   &emsp;  software engineer   &emsp;  |   &emsp;  management system   &emsp;  |
 |   &emsp;  vax vms &emsp;  |   &emsp;  operating system    &emsp;  |   &emsp;  management system   &emsp;  |   &emsp;  business logic  &emsp;  |   &emsp;  development team    &emsp;  |
 |   &emsp;  pl sql  &emsp;  |   &emsp;  technical support   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  code review &emsp;  |   &emsp;  software engineer   &emsp;  |
 |   &emsp;  responsibility include  &emsp;  |   &emsp;  web service &emsp;  |   &emsp;  net sql server  &emsp;  |   &emsp;  responsibility involve  &emsp;  |   &emsp;  sql server  &emsp;  |
@@ -265,7 +265,11 @@ Technology is one of the fastest changing industries. From this model, we can se
 </br>
 
 ## [4] Next Steps
-1. Test different vectorization models, such as the Transformer Model
-2. Test neural network classification models, such as CNN
-3. Expand the number of classes
-4. Incorporate time-based modeling
+
+1. Currently, the model considers similar ngrams like `accounts payable balance` and `organize accounts payable` to be completely different phrases. We would like to test training a vectorization model, like Doc2Vec, to place similar ngrams closer to each other in the vector space.
+
+2. We would also like to test vect creation using the OpenAI Transformer model.
+
+3. We would like to expand the number of classes used in the model.
+
+4. We would like to incorporate a time component to the app. Can we see changes in the skills needed for each job?

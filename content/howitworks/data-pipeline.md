@@ -72,8 +72,10 @@ Transformation: ```AKRON, OH``` &rarr; ```[['akron'],['Ohio']]```
 
 ## [3] Next Steps
 
-A. Collect more data.
+1. Collect more data.
 
-B. Identify additional ways to group job titles.
+2. Identify new ways to group job titles.
 
-C. Group degree types into STEM or non-STEM.
+3. Identify new ways to parse degree from subject.
+
+4. Group degree types into STEM or non-STEM.
