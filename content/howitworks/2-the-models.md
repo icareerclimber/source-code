@@ -120,7 +120,7 @@ __Most Confused__
 
 ### Model Example
 
-![alt text](images_folder/doc_similarity_image.jpg "Logo Title Text 1")
+![alt text](https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image.jpg "Logo Title Text 1")
 
 
 ## [2] Job Skills
