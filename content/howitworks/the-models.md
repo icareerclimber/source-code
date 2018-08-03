@@ -8,7 +8,7 @@ author = "iCareer Climber Team"
 
 </br>
 
-## [1] Document Similarity
+## [1] Document Similarity Model
 
 [Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
 
@@ -118,28 +118,79 @@ __Most Confused__
 
 </br>
 
-### Example Result
+### PCA Analysis
+
+We performed a PCA analysis to test the clustering from the TD-IDF vectorization. The vectors were reduced to a 3-dimensional space and put into the [Embedding Projector](https://projector.tensorflow.org/) website. The below results reinforce the model performance results.
+
+</br>
+
+1. Below are the closest 500 points to a randomly selected ___consultant___ point. The language used in the consultant's resume is similar to jobs in many different domains. 
+
+&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_consultant.png" width="700">
+
+</br>
+
+2. Below are the closest 500 points to a randomly selected ___android engineer___ point. A majority of the closest points are android engineer.
+
+&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_android_engineer.png" width="700">
+
+3. Just for fun, we selected a random ___data scientist___ point. Data Scientists appear to be at the intersection of data anlysis, data engineering, software engineering, product management, and research. ;)
+
+&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_data_scientist.png" width="700">
+
+To play with the data yourself, you can input our [vector file](https://drive.google.com/open?id=1y9wjQhVtUC7Z3APXqlJ8D-04CP5N4mWN) and [metadata file](https://drive.google.com/open?id=1w4LXTvw0G-g6Wg1_lZL5DHFl646J6cf4) to this website: [https://projector.tensorflow.org/](https://projector.tensorflow.org/) 
+
+</br>
+
+### Example Output
 
 <img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image.png" width="1000">
 
-### PCA Analysis
+</br>
 
 
-To play with the data yourself, you can input our vector and metadata file to this website: [https://projector.tensorflow.org/](https://projector.tensorflow.org/)
-
-
-[Link to Generate Vectors](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
-
-[Link to Vectors File](https://drive.google.com/open?id=1y9wjQhVtUC7Z3APXqlJ8D-04CP5N4mWN)
-
-[Link to Metadata File](https://drive.google.com/open?id=1w4LXTvw0G-g6Wg1_lZL5DHFl646J6cf4)
-
-## [2] Job Skills
+## [2] Job Skills Model
 
 [Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
+
+In order to produce useful skills information, we created a model similar to the one above with a few differences.
+
+</br>
+
+### Model Parameter Differences
+
+```
+Train-Test Split - 325,787 / 17,147
+
+TD-IDF Vectorizer - ngram_range: [3,3]
+
+Undersampling - Common job undersampling to 5000 records
+
+Oversampling - SMOTE oversampling to 5000 records
+```
+
+</br>
+
+### Model Performance
+
+| &emsp;Metric&emsp; | &emsp;Result&emsp; |
+|---|---|
+| &emsp;Accuracy&emsp; | &emsp;39.30%&emsp; |
+| &emsp;F1 Score&emsp; | &emsp;35.57%&emsp; |
+| &emsp;Precision Score&emsp; | &emsp;36.70%&emsp; |
+| &emsp;Recall Score&emsp; | &emsp;36.12%&emsp; |
+
+</br>
+
+### Example Outputs
+
+</br>
+
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image.png" width="1000">
 
 </br>
 
 ## [3] Next Steps
-
-
+1. Test different vectorization models, such as the Transformer Model
+2. Test neural network classification models, such as CNN
+3. Expand the number of classes
