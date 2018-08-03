@@ -76,8 +76,6 @@
               
                 <li><a href="/demo/">Live Demo</a></li>
               
-                <li><a href="/nextsteps/">Next Steps</a></li>
-              
                 <li><a href="/team/">Team</a></li>
               
               </ul>
@@ -103,10 +101,14 @@
 				<div class="col-md-6">
 					<article class="blog-post">
 						
-						<a class="post-title" href="https://icareerclimber.github.io/howitworks/1-getting-the-data/">1 Getting the Data</a>
+						<a class="post-title" href="https://icareerclimber.github.io/howitworks/1-getting-the-data/">Data Pipeline</a>
 						<p>
-							Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
-We&rsquo;ll start with creating a new site with a very basic template.
+							[1] Data Collection Using Python Selenium and Beautiful Soup libraries to build web scraping tools, our team collected from the web over 600k unique resumes and 1.1 million salary records representing over 5500 cities across 20 years.
+Link to Code
+
+[2] Data Transformation Data ingestion pipelines were created to standardize the data inputs from various sources.
+
+Jobs Title Job titles vary widely from resume to resume, so we created a heuristic to process each job title into a standard format.
 						</p>
 						<a href="https://icareerclimber.github.io/howitworks/1-getting-the-data/" class="btn btn-main">Read More</a>
 					</article>
@@ -115,31 +117,19 @@ We&rsquo;ll start with creating a new site with a very basic template.
 				<div class="col-md-6">
 					<article class="blog-post">
 						
-						<a class="post-title" href="https://icareerclimber.github.io/howitworks/2-data-transformation/">2 Data Transformation</a>
+						<a class="post-title" href="https://icareerclimber.github.io/howitworks/2-classification-models/">Classification Models</a>
 						<p>
-							Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&rsquo;t cover using CSS to style your theme.
-We&rsquo;ll start with creating a new site with a very basic template.
+							[1] Document Similarity We provide career recommendations in a ranked order based on the similarity of a job seeker&rsquo;s current/past job experiences. Our model is powered by resume information all across the US.
+This product is a proof of concept and contains a small subset of possible jobs. Our model contains 114 unique job titles. The list of job titles is derived from the availability of salary information. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years.
 						</p>
-						<a href="https://icareerclimber.github.io/howitworks/2-data-transformation/" class="btn btn-main">Read More</a>
+						<a href="https://icareerclimber.github.io/howitworks/2-classification-models/" class="btn btn-main">Read More</a>
 					</article>
 				</div>
 				
 				<div class="col-md-6">
 					<article class="blog-post">
 						
-						<a class="post-title" href="https://icareerclimber.github.io/howitworks/3-classification-models/">3 Classification Models</a>
-						<p>
-							Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.
-						</p>
-						<a href="https://icareerclimber.github.io/howitworks/3-classification-models/" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				
-				<div class="col-md-6">
-					<article class="blog-post">
-						
-						<a class="post-title" href="https://icareerclimber.github.io/howitworks/4-application-design/">4 Visualization Design</a>
+						<a class="post-title" href="https://icareerclimber.github.io/howitworks/3-visualization-design/">Visualization Design</a>
 						<p>
 							Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
@@ -148,7 +138,7 @@ Step 2. Build the Docs Hugo has its own example site which happens to also be th
 Follow the following steps:
  Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:
 						</p>
-						<a href="https://icareerclimber.github.io/howitworks/4-application-design/" class="btn btn-main">Read More</a>
+						<a href="https://icareerclimber.github.io/howitworks/3-visualization-design/" class="btn btn-main">Read More</a>
 					</article>
 				</div>
 				

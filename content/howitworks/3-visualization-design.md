@@ -1,5 +1,5 @@
 +++
-title = "4 Visualization Design"
+title = "Visualization Design"
 date = "2018-07-28"
 tags = ["hugo"]
 categories = ["pseudo"]

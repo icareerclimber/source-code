@@ -6,21 +6,17 @@ theme = "airspace-hugo"
 [menu]
 
   [[menu.header]]
+    weight = 2
+    name = "How It Works"
+    url = "/howitworks"
+  [[menu.header]]
     weight = 3
     name = "Live Demo"
     url = "/demo"
   [[menu.header]]
     weight = 4
-    name = "Next Steps"
-    url = "/nextsteps"
-  [[menu.header]]
-    weight = 5
     name = "Team"
     url = "/team"
-  [[menu.header]]
-    weight = 3
-    name = "How It Works"
-    url = "/howitworks"
 
 # The site's parameters
 [params]

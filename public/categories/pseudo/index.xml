@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>4 Visualization Design</title>
-      <link>https://icareerclimber.github.io/howitworks/4-application-design/</link>
+      <title>Visualization Design</title>
+      <link>https://icareerclimber.github.io/howitworks/3-visualization-design/</link>
       <pubDate>Sat, 28 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://icareerclimber.github.io/howitworks/4-application-design/</guid>
+      <guid>https://icareerclimber.github.io/howitworks/3-visualization-design/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo

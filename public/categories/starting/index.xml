@@ -12,33 +12,27 @@
     
     
     <item>
-      <title>1 Getting the Data</title>
+      <title>Data Pipeline</title>
       <link>https://icareerclimber.github.io/howitworks/1-getting-the-data/</link>
       <pubDate>Tue, 31 Jul 2018 00:00:00 +0000</pubDate>
       
       <guid>https://icareerclimber.github.io/howitworks/1-getting-the-data/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
+      <description>[1] Data Collection Using Python Selenium and Beautiful Soup libraries to build web scraping tools, our team collected from the web over 600k unique resumes and 1.1 million salary records representing over 5500 cities across 20 years.
+Link to Code
+
+[2] Data Transformation Data ingestion pipelines were created to standardize the data inputs from various sources.
+
+Jobs Title Job titles vary widely from resume to resume, so we created a heuristic to process each job title into a standard format.</description>
     </item>
     
     <item>
-      <title>2 Data Transformation</title>
-      <link>https://icareerclimber.github.io/howitworks/2-data-transformation/</link>
-      <pubDate>Mon, 30 Jul 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://icareerclimber.github.io/howitworks/2-data-transformation/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>3 Classification Models</title>
-      <link>https://icareerclimber.github.io/howitworks/3-classification-models/</link>
+      <title>Classification Models</title>
+      <link>https://icareerclimber.github.io/howitworks/2-classification-models/</link>
       <pubDate>Sun, 29 Jul 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://icareerclimber.github.io/howitworks/3-classification-models/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
+      <guid>https://icareerclimber.github.io/howitworks/2-classification-models/</guid>
+      <description>[1] Document Similarity We provide career recommendations in a ranked order based on the similarity of a job seeker&amp;rsquo;s current/past job experiences. Our model is powered by resume information all across the US.
+This product is a proof of concept and contains a small subset of possible jobs. Our model contains 114 unique job titles. The list of job titles is derived from the availability of salary information. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years.</description>
     </item>
     
   </channel>

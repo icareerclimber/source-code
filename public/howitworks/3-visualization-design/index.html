@@ -14,7 +14,7 @@
 
 
 
-<title>Categories</title>
+<title>Visualization Design</title>
 
 <meta name="generator" content="Hugo 0.45.1" />
 
@@ -88,67 +88,107 @@
 </header>
 
 
-	<section class="blog section">
-		<div class="container">
-		
-		<div class="row">
-			<div class="contact-title">
-				<h2>How It Works</h2>
-			</div>
-		</div>
-			<div class="row">
-				
-				<div class="col-md-6">
-					<article class="blog-post">
-						
-						<a class="post-title" href="https://icareerclimber.github.io/categories/lorem/">Lorem</a>
-						<p>
+	<div class="post">
+	  
+	  <section class="section" style="border: 1px dotted #ddd;">
+	    <div class="container">
+	      <div class="row">
+	        <div>
+	          <div class="block">
 							
-						</p>
-						<a href="https://icareerclimber.github.io/categories/lorem/" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				
-				<div class="col-md-6">
-					<article class="blog-post">
-						
-						<a class="post-title" href="https://icareerclimber.github.io/categories/programming/">Programming</a>
-						<p>
-							
-						</p>
-						<a href="https://icareerclimber.github.io/categories/programming/" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				
-				<div class="col-md-6">
-					<article class="blog-post">
-						
-						<a class="post-title" href="https://icareerclimber.github.io/categories/pseudo/">Pseudo</a>
-						<p>
-							
-						</p>
-						<a href="https://icareerclimber.github.io/categories/pseudo/" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				
-				<div class="col-md-6">
-					<article class="blog-post">
-						
-						<a class="post-title" href="https://icareerclimber.github.io/categories/starting/">Starting</a>
-						<p>
-							
-						</p>
-						<a href="https://icareerclimber.github.io/categories/starting/" class="btn btn-main">Read More</a>
-					</article>
-				</div>
-				
-			</div>
-			<div class="col-12 text-center">
-				
+	            <h1>Visualization Design</h1>
+	            <div class="post-info-wrapper">
+	              <p class="italic">By <span class="bold"></span> on <span class="bold">6 July 2018</span></p>
+	            </div>
+	            <hr />
+	            <p>
 
-			</div>
-		</div>
-	</section>
+<h2 id="step-1-install-hugo">Step 1. Install Hugo</h2>
+
+<p>Goto <a href="https://github.com/spf13/hugo/releases">hugo releases</a> and download the
+appropriate version for your os and architecture.</p>
+
+<p>Save it somewhere specific as we will be using it in the next step.</p>
+
+<p>More complete instructions are available at <a href="/overview/installing/">installing hugo</a></p>
+
+<h2 id="step-2-build-the-docs">Step 2. Build the Docs</h2>
+
+<p>Hugo has its own example site which happens to also be the documentation site
+you are reading right now.</p>
+
+<p>Follow the following steps:</p>
+
+<ol>
+<li>Clone the <a href="http://github.com/spf13/hugo">hugo repository</a></li>
+<li>Go into the repo</li>
+<li>Run hugo in server mode and build the docs</li>
+<li>Open your browser to <a href="http://localhost:1313">http://localhost:1313</a></li>
+</ol>
+
+<p>Corresponding pseudo commands:</p>
+
+<pre><code>git clone https://github.com/spf13/hugo
+cd hugo
+/path/to/where/you/installed/hugo server --source=./docs
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Press ctrl+c to stop
+</code></pre>
+
+<p>Once you&rsquo;ve gotten here, follow along the rest of this page on your local build.</p>
+
+<h2 id="step-3-change-the-docs-site">Step 3. Change the docs site</h2>
+
+<p>Stop the Hugo process by hitting ctrl+c.</p>
+
+<p>Now we are going to run hugo again, but this time with hugo in watch mode.</p>
+
+<pre><code>/path/to/hugo/from/step/1/hugo server --source=./docs --watch
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 27 ms
+&gt; Web Server is available at http://localhost:1313
+&gt; Watching for changes in /Users/spf13/Code/hugo/docs/content
+&gt; Press ctrl+c to stop
+</code></pre>
+
+<p>Open your <a href="http://vim.spf13.com">favorite editor</a> and change one of the source
+content pages. How about changing this very file to <em>fix the typo</em>. How about changing this very file to <em>fix the typo</em>.</p>
+
+<p>Content files are found in <code>docs/content/</code>. Unless otherwise specified, files
+are located at the same relative location as the url, in our case
+<code>docs/content/overview/quickstart.md</code>.</p>
+
+<p>Change and save this file.. Notice what happened in your terminal.</p>
+
+<pre><code>&gt; Change detected, rebuilding site
+
+&gt; 29 pages created
+&gt; 0 tags index created
+&gt; in 26 ms
+</code></pre>
+
+<p>Refresh the browser and observe that the typo is now fixed.</p>
+
+<p>Notice how quick that was. Try to refresh the site before it&rsquo;s finished building.. I double dare you.
+Having nearly instant feedback enables you to have your creativity flow without waiting for long builds.</p>
+
+<h2 id="step-4-have-fun">Step 4. Have fun</h2>
+
+<p>The best way to learn something is to play with it.</p>
+</p>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<p class="center-text" style="padding: 30px;">
+	  <a class="btn btn-main" href="https://icareerclimber.github.io//howitworks">Back to How It Works</a>
+	</p>
 
 	
 
@@ -167,6 +207,7 @@
 </section>
 
 
+
 	
 <footer>
   <div class="container">
@@ -182,7 +223,6 @@
     </div>
   </div>
 </footer>
-
 
 </body>
 </html>
