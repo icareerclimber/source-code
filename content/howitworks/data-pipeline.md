@@ -1,8 +1,6 @@
 +++
 title = "Data Pipeline"
 date = "2018-07-31"
-tags = ["theme"]
-categories = ["starting"]
 author = "iCareer Climber Team"
 +++
 

@@ -1,8 +1,7 @@
 +++
-title = "6 Front-End Architecture"
+title = "Front-End Architecture"
 date = "2018-07-26"
-tags = ["ipsum"]
-categories = ["lorem"]
+author = "iCareer Climber Team"
 +++
 
 ## Move static content to `static`

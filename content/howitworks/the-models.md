@@ -1,8 +1,6 @@
 +++
 title = "The Models"
 date = "2018-07-29"
-tags = ["theme"]
-categories = ["starting"]
 author = "iCareer Climber Team"
 +++
 
@@ -21,17 +19,24 @@ This product is a proof of concept and contains a small subset of possible jobs.
 ### Model Parameters
 
 ```
-Number of Classes - 114
+Number of Classes:
+    114
 
-Train-Test Split - 222,978 / 11,736 (95% / 5%)
+Train-Test Split:
+    222,978 / 11,736 (95% / 5%)
 
-TD-IDF Vectorizer - min_df: 5, ngram_range: [1,3]
+TD-IDF Vectorizer:
+    Min_df: 5
+    Ngram_range: [1,3]
 
-Undersampling - More common jobs were undersampled to 2500 records based on job recency.
+Undersampling:
+    More common jobs were undersampled to 2500 records based on job recency.
 
-Oversampling - Less common jobs were oversampled to 2500 records using the regular Synthetic Minority Over-sampling Technique (SMOTE).
+Oversampling:
+    Less common jobs were oversampled to 2500 records using the regular Synthetic Minority Over-sampling Technique (SMOTE).
 
-Multinomial Naive Bayes Classifier - alpha: 0.02
+Multinomial Naive Bayes Classifier:
+    Alpha: 0.02
 ```
 
 </br>
@@ -39,6 +44,8 @@ Multinomial Naive Bayes Classifier - alpha: 0.02
 ### Model Performance
 
 </br>
+
+__Performance__
 
 | &emsp;Metric&emsp; | &emsp;Result&emsp; |
 |---|---|
@@ -126,17 +133,17 @@ We performed a PCA analysis to test the clustering from the TD-IDF vectorization
 
 1. Below are the closest 500 points to a randomly selected ___consultant___ point. The language used in the consultant's resume is similar to jobs in many different domains. 
 
-&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_consultant.png" width="700">
+&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_consultant.png" width="1000">
 
 </br>
 
 2. Below are the closest 500 points to a randomly selected ___android engineer___ point. A majority of the closest points are android engineer.
 
-&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_android_engineer.png" width="700">
+&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_android_engineer.png" width="1000">
 
 3. Just for fun, we selected a random ___data scientist___ point. Data Scientists appear to be at the intersection of data anlysis, data engineering, software engineering, product management, and research. ;)
 
-&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_data_scientist.png" width="700">
+&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_data_scientist.png" width="1000">
 
 To play with the data yourself, you can input our [vector file](https://drive.google.com/open?id=1y9wjQhVtUC7Z3APXqlJ8D-04CP5N4mWN) and [metadata file](https://drive.google.com/open?id=1w4LXTvw0G-g6Wg1_lZL5DHFl646J6cf4) to this website: [https://projector.tensorflow.org/](https://projector.tensorflow.org/) 
 
@@ -160,13 +167,17 @@ In order to produce useful skills information, we created a model similar to the
 ### Model Parameter Differences
 
 ```
-Train-Test Split - 325,787 / 17,147
+Train-Test Split:
+    325,787 / 17,147
 
-TD-IDF Vectorizer - ngram_range: [3,3]
+TD-IDF Vectorizer:
+    Ngram_range: [3,3]
 
-Undersampling - Common job undersampling to 5000 records
+Undersampling:
+    Common job undersampling to 5000 records
 
-Oversampling - SMOTE oversampling to 5000 records
+Oversampling:
+    SMOTE oversampling to 5000 records
 ```
 
 </br>
@@ -186,7 +197,7 @@ Oversampling - SMOTE oversampling to 5000 records
 
 </br>
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_technical_writer.png" width="500"><img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_front_end_engineer.png" width="500"><img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_data_scientist.png" width="500">
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_technical_writer.png" height="300">&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_front_end_engineer.png" height="300">&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_data_scientist.png" height="300">
 
 
 

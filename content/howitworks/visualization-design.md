@@ -1,8 +1,7 @@
 +++
 title = "Visualization Design"
 date = "2018-07-28"
-tags = ["hugo"]
-categories = ["pseudo"]
+author = "iCareer Climber Team"
 +++
 
 ## Step 1. Install Hugo
