@@ -199,11 +199,73 @@ Oversampling:
 
 <img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_technical_writer.png" height="300">&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_front_end_engineer.png" height="300">&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_data_scientist.png" height="300">
 
+</br>
 
+## [3] Time-Based Model (Not Productionized)
+
+[Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/07_process_model_software_engineer_over_time.ipynb)
+
+The resumes we collected contained a large number of ___software engineering___ roles, so we thought it would be interesting to create a classification model to derive the most important skills for different periods of time for software engineers. Below are the highest weighted skills for each timeframe. __This model is not included in the app.__
 
 </br>
 
-## [3] Next Steps
+### Model Parameters
+
+```
+Number of Classes:
+    114
+
+TD-IDF Vectorizer:
+    Min_df: 0
+    Ngram_range: [2,4]
+
+Oversampling:
+    Less common jobs were oversampled to 2500 records using the regular Synthetic Minority Over-sampling Technique (SMOTE).
+
+Multinomial Naive Bayes Classifier:
+    Alpha: 0.1
+```
+
+</br>
+
+### Model Performance
+
+| &emsp;Metric&emsp; | &emsp;Result&emsp; |
+|---|---|
+| &emsp;Accuracy&emsp; | &emsp;54.52%%&emsp; |
+
+</br>
+
+### Results
+
+Technology is one of the fastest changing industries. From this model, we can see the rise to prominence and the fall of different tools through time.
+
+|   &emsp;  Earlier-1998    &emsp;  |   &emsp;  1998-2003   &emsp;  |   &emsp;  2003-2008   &emsp;  |   &emsp;  2008-2013   &emsp;  |   &emsp;  2013-2018   &emsp;  |
+|       ---     |       ---     |       ---     |       ---     |       ---     |
+|   &emsp;  development team    &emsp;  |   &emsp;  database design &emsp;  |   &emsp;  unit testing    &emsp;  |   &emsp;  management system   &emsp;  |   &emsp;  version control &emsp;  |
+|   &emsp;  test plan   &emsp;  |   &emsp;  rational rose   &emsp;  |   &emsp;  crystal report  &emsp;  |   &emsp;  html cs javascript  &emsp;  |   &emsp;  unit testing    &emsp;  |
+|   &emsp;  window nt   &emsp;  |   &emsp;  client server   &emsp;  |   &emsp;  java j2ee   &emsp;  |   &emsp;  test plan   &emsp;  |   &emsp;  web application using   &emsp;  |
+|   &emsp;  software design &emsp;  |   &emsp;  vb net  &emsp;  |   &emsp;  net asp net &emsp;  |   &emsp;  data access &emsp;  |   &emsp;  visual studio   &emsp;  |
+|   &emsp;  customer support    &emsp;  |   &emsp;  crystal report  &emsp;  |   &emsp;  web base    &emsp;  |   &emsp;  front end   &emsp;  |   &emsp;  full stack  &emsp;  |
+|   &emsp;  tcp ip  &emsp;  |   &emsp;  using visual basic  &emsp;  |   &emsp;  software development    &emsp;  |   &emsp;  sql query   &emsp;  |   &emsp;  develop maintain    &emsp;  |
+|   &emsp;  programmer analyst  &emsp;  |   &emsp;  store procedure &emsp;  |   &emsp;  oracle 9i   &emsp;  |   &emsp;  design implement    &emsp;  |   &emsp;  store procedure &emsp;  |
+|   &emsp;  cobol ii    &emsp;  |   &emsp;  software application    &emsp;  |   &emsp;  html cs &emsp;  |   &emsp;  java j2ee   &emsp;  |   &emsp;  technology use  &emsp;  |
+|   &emsp;  ibm mainframe   &emsp;  |   &emsp;  tcp ip  &emsp;  |   &emsp;  develop test    &emsp;  |   &emsp;  visual studio   &emsp;  |   &emsp;  new feature &emsp;  |
+|   &emsp;  client server   &emsp;  |   &emsp;  pl sql  &emsp;  |   &emsp;  store procedure &emsp;  |   &emsp;  new feature &emsp;  |   &emsp;  code review &emsp;  |
+|   &emsp;  system use  &emsp;  |   &emsp;  technology use  &emsp;  |   &emsp;  role responsibility &emsp;  |   &emsp;  using asp net   &emsp;  |   &emsp;  agile scrum &emsp;  |
+|   &emsp;  assembly language   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  window xp   &emsp;  |   &emsp;  unit testing    &emsp;  |   &emsp;  rest api    &emsp;  |
+|   &emsp;  user interface  &emsp;  |   &emsp;  data warehouse  &emsp;  |   &emsp;  team member &emsp;  |   &emsp;  application use &emsp;  |   &emsp;  design implement    &emsp;  |
+|   &emsp;  device driver   &emsp;  |   &emsp;  development team    &emsp;  |   &emsp;  design implementation   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  using asp net   &emsp;  |
+|   &emsp;  develop implement   &emsp;  |   &emsp;  html javascript &emsp;  |   &emsp;  business logic  &emsp;  |   &emsp;  web base    &emsp;  |   &emsp;  entity framework    &emsp;  |
+|   &emsp;  using visual basic  &emsp;  |   &emsp;  responsibility include  &emsp;  |   &emsp;  visual basic    &emsp;  |   &emsp;  software engineer   &emsp;  |   &emsp;  management system   &emsp;  |
+|   &emsp;  vax vms &emsp;  |   &emsp;  operating system    &emsp;  |   &emsp;  management system   &emsp;  |   &emsp;  business logic  &emsp;  |   &emsp;  development team    &emsp;  |
+|   &emsp;  pl sql  &emsp;  |   &emsp;  technical support   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  code review &emsp;  |   &emsp;  software engineer   &emsp;  |
+|   &emsp;  responsibility include  &emsp;  |   &emsp;  web service &emsp;  |   &emsp;  net sql server  &emsp;  |   &emsp;  responsibility involve  &emsp;  |   &emsp;  sql server  &emsp;  |
+
+</br>
+
+## [4] Next Steps
 1. Test different vectorization models, such as the Transformer Model
 2. Test neural network classification models, such as CNN
 3. Expand the number of classes
+4. Incorporate time-based modeling
