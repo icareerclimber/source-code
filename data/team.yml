@@ -10,8 +10,8 @@ content:
     text2: >
       Seattle, Washington
     email:
-    linkedin:
-    github:
+    linkedin: https://www.linkedin.com/in/karin-belsvik-brodd/
+    github: https://github.com/kbelsvik
 
   - image: keri.jpg
     name: Keri Wheatley
@@ -23,12 +23,12 @@ content:
     linkedin: https://www.linkedin.com/in/keri-wheatley/
     github: https://github.com/keriwheatley/
 
-  - image: keri.jpg
+  - image: yuhang.png
     name: Yuhang Zhao
     text1: >
       Principal Member Of Technical Staff at AthenaHealth
     text2: >
       Cambridge, Massachusetts
-    email:
-    linkedin:
-    github:
+    email: yhzhao@berkeley.edu
+    linkedin: https://www.linkedin.com/in/yuhang-zhao-825a405/
+    github: https://github.com/yhzhao
