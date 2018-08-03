@@ -118,10 +118,21 @@ __Most Confused__
 
 </br>
 
-### Model Example
+### Example Result
 
-![alt text](https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image.jpg "Logo Title Text 1")
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image.png" width="1000">
 
+### PCA Analysis
+
+
+To play with the data yourself, you can input our vector and metadata file to this website: [https://projector.tensorflow.org/](https://projector.tensorflow.org/)
+
+
+[Link to Generate Vectors](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
+
+[Link to Vectors File](https://drive.google.com/open?id=1y9wjQhVtUC7Z3APXqlJ8D-04CP5N4mWN)
+
+[Link to Metadata File](https://drive.google.com/open?id=1w4LXTvw0G-g6Wg1_lZL5DHFl646J6cf4)
 
 ## [2] Job Skills
 
