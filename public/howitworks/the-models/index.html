@@ -597,7 +597,7 @@ Oversampling:
 <h3 id="model-parameters-1">Model Parameters</h3>
 
 <pre><code>Number of Classes:
-    114
+    5
 
 TD-IDF Vectorizer:
     Min_df: 0
@@ -634,7 +634,7 @@ Multinomial Naive Bayes Classifier:
 
 <h3 id="results">Results</h3>
 
-<p>Technology is one of the fastest changing industries. From this model, we can see the rise to prominence and the fall of different tools through time.</p>
+<p>Technology is one of the fastest changing industries. From this model, we can see the rise to prominence and the fall of different tools throughout time.</p>
 
 <table>
 <thead>
@@ -659,7 +659,7 @@ Multinomial Naive Bayes Classifier:
 <tr>
 <td>&emsp;  test plan   &emsp;</td>
 <td>&emsp;  rational rose   &emsp;</td>
-<td>&emsp;  crystal report  &emsp;</td>
+<td>&emsp;  <span style="color:blue"><strong><em>crystal report</em></strong></span>  &emsp;</td>
 <td>&emsp;  html cs javascript  &emsp;</td>
 <td>&emsp;  unit testing    &emsp;</td>
 </tr>
@@ -677,12 +677,12 @@ Multinomial Naive Bayes Classifier:
 <td>&emsp;  vb net  &emsp;</td>
 <td>&emsp;  net asp net &emsp;</td>
 <td>&emsp;  data access &emsp;</td>
-<td>&emsp;  visual studio   &emsp;</td>
+<td>&emsp;  <span style="color:green"><strong><em>visual studio</em></strong></span>   &emsp;</td>
 </tr>
 
 <tr>
 <td>&emsp;  customer support    &emsp;</td>
-<td>&emsp;  crystal report  &emsp;</td>
+<td>&emsp;  <span style="color:blue"><strong><em>crystal report</em></strong></span>  &emsp;</td>
 <td>&emsp;  web base    &emsp;</td>
 <td>&emsp;  front end   &emsp;</td>
 <td>&emsp;  full stack  &emsp;</td>
@@ -690,7 +690,7 @@ Multinomial Naive Bayes Classifier:
 
 <tr>
 <td>&emsp;  tcp ip  &emsp;</td>
-<td>&emsp;  using visual basic  &emsp;</td>
+<td>&emsp;  <span style="color:purple"><strong><em>using visual basic</em></strong></span>  &emsp;</td>
 <td>&emsp;  software development    &emsp;</td>
 <td>&emsp;  sql query   &emsp;</td>
 <td>&emsp;  develop maintain    &emsp;</td>
@@ -716,7 +716,7 @@ Multinomial Naive Bayes Classifier:
 <td>&emsp;  ibm mainframe   &emsp;</td>
 <td>&emsp;  tcp ip  &emsp;</td>
 <td>&emsp;  develop test    &emsp;</td>
-<td>&emsp;  visual studio   &emsp;</td>
+<td>&emsp;  <span style="color:green"><strong><em>visual studio</em></strong></span>   &emsp;</td>
 <td>&emsp;  new feature &emsp;</td>
 </tr>
 
@@ -769,9 +769,9 @@ Multinomial Naive Bayes Classifier:
 </tr>
 
 <tr>
-<td>&emsp;  using visual basic  &emsp;</td>
+<td>&emsp;  <span style="color:purple"><strong><em>using visual basic</em></strong></span>  &emsp;</td>
 <td>&emsp;  responsibility include  &emsp;</td>
-<td>&emsp;  visual basic    &emsp;</td>
+<td>&emsp;  <span style="color:purple"><strong><em>visual basic</em></strong></span>    &emsp;</td>
 <td>&emsp;  software engineer   &emsp;</td>
 <td>&emsp;  management system   &emsp;</td>
 </tr>
@@ -807,10 +807,13 @@ Multinomial Naive Bayes Classifier:
 <h2 id="4-next-steps">[4] Next Steps</h2>
 
 <ol>
-<li>Test different vectorization models, such as the Transformer Model</li>
-<li>Test neural network classification models, such as CNN</li>
-<li>Expand the number of classes</li>
-<li>Incorporate time-based modeling</li>
+<li><p>Currently, the model considers similar ngrams like <code>accounts payable balance</code> and <code>organize accounts payable</code> to be completely different phrases. We would like to test training a vectorization model, like Doc2Vec, to place similar ngrams closer to each other in the vector space.</p></li>
+
+<li><p>We would also like to test vect creation using the OpenAI Transformer model.</p></li>
+
+<li><p>We would like to expand the number of classes used in the model.</p></li>
+
+<li><p>We would like to incorporate a time component to the app. Can we see changes in the skills needed for each job?</p></li>
 </ol>
 </p>
 	          </div>
