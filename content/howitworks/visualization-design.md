@@ -6,26 +6,29 @@ author = "iCareer Climber Team"
 
 ## Salary Barchart
 
-[Visualization](http://people.ischool.berkeley.edu/~keri.wheatley/w210_salary_bar_chart/) | [Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/d3_viz/salary_bar_chart)
+This visualization was built using D3.js. &emsp;&emsp;[Visualization](http://people.ischool.berkeley.edu/~keri.wheatley/w210_salary_bar_chart/) | [Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/d3_viz/salary_bar_chart)
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/salary-barchart.png" width="1000">
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/salary-barchart.png" width="470">
 
 
 ## Education Barchart
 
-[Visualization](http://people.ischool.berkeley.edu/~keri.wheatley/w210_edu_bar_chart/) (Sorry this one's slow!) | [Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/d3_viz/education_histogram)
+This visualization was built using D3.js. &emsp;&emsp;[Visualization](http://people.ischool.berkeley.edu/~keri.wheatley/w210_edu_bar_chart/) | [Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/d3_viz/education_histogram)
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/education-barchart.png" width="1000">
+
+Next Steps - 
+
+1. Add identifor for STEM versus non-STEM degrees.
+
+2. Improve processing speed.
+
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/education-barchart.png" width="470">
 
 
 ## Job Title Hierarchy Tree Graph
 
-[Visualization](http://people.ischool.berkeley.edu/~keri.wheatley/w210_node_graph/) | [Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/d3_viz/node_graph)
+This visualization was built using D3.js. &emsp;&emsp;[Visualization](http://people.ischool.berkeley.edu/~keri.wheatley/w210_node_graph/) | [Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/d3_viz/node_graph)
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/hierarchy-tree-graph.png" width="1000">
+Next Steps - add a way to identify length of time spent in a job.
 
-## Next Steps
-
-1. For the Education Barchart, color code degrees by STEM and non-STEM majors.
-
-2. For the Hierarchy Tree Graph, add a time component.
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/hierarchy-tree-graph.png" width="470">
