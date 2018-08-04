@@ -18,6 +18,22 @@ theme = "airspace-hugo"
     name = "Team"
     url = "/team"
 
+  [[menu.footer]]
+    weight = 1
+    name = "About Us"
+    url = "/"
+  [[menu.footer]]
+    weight = 2
+    name = "How It Works"
+    url = "/howitworks"
+  [[menu.footer]]
+    weight = 3
+    name = "Live Demo"
+    url = "/demo"
+  [[menu.footer]]
+    weight = 4
+    name = "Team"
+    url = "/team"
 # The site's parameters
 [params]
 
@@ -27,7 +43,7 @@ theme = "airspace-hugo"
 
   dateFormat = "6 January 2006"
 
-  home = "Home"
+  home = "About Us"
 
   [params.slider]
     enable = true
@@ -37,7 +53,7 @@ theme = "airspace-hugo"
   [params.wrapper]
     enable = true
     title1 = "About Us"
-    italic = "iCareer Climber transforms hundreds of thousands of resumes into digestable information for the job seeker. Our tools give job seekers the power to tackle their next career move."
+    italic = "iCareer Climber transforms hundreds of thousands of resumes into digestible information for the job seeker. Our tools give job seekers the power to tackle their next career move."
     paragraph1 = "Today, the best resources for career guidance are Top 10 articles and stale databases. By combining data mining, machine learning, and user experience, we have pulled together key career information for today's job seeker."
     paragraph2 = "Our work shows promising results. The wisdom of the crowd can in fact be leveraged to guide job seekers to their next move."
     title2 = "Our Product"
