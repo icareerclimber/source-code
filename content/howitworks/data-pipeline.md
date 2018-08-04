@@ -8,7 +8,7 @@ author = "iCareer Climber Team"
 
 ## [1] Data Collection
 
-Using Python Selenium and Beautiful Soup libraries to build web scraping tools, our team collected from the web <span style="font-size:22px;">__over 600k__</span> unique resumes and <span style="font-size:22px;">__1.1 million__</span> salary records representing <span style="font-size:22px;">__over 5500__</span> cities across <span style="font-size:22px;">__20__</span> years.
+Using Python Selenium and Beautiful Soup libraries to build web scraping tools, our team collected from the web <span style="font-size:22px;">__over 600k__</span> unique resumes and <span style="font-size:22px;">__1.1 million__</span> salary records representing <span style="font-size:22px;">__over 5500__</span> cities across <span style="font-size:22px;">__30__</span> years.
 
 [Link to Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/scrape)
 
