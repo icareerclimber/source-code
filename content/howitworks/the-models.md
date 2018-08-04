@@ -6,14 +6,13 @@ author = "iCareer Climber Team"
 
 </br>
 
-## [1] Document Similarity Model
+## [1] Document Similarity Model 
 
-[Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image1.png" width="500">
 
-We provide career recommendations in a ranked order based on the similarity of a job seeker's current job experiences. Our model is powered by resume information all across the US. This product is a proof of concept and contains a small subset of possible jobs (114 unique job titles). The list of jobs is derived from the availability of salary and resume data. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years.
+We provide career recommendations in a ranked order based on the similarity of a job seeker's current job experiences. Our model is powered by resume information across the US. This product is a proof of concept and contains a small subset of possible jobs (114 unique job titles). The list of jobs is derived from the availability of salary and resume data. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years.
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image1.png" width="1000">
-
+<a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb" target="_blank">Link to Code</a>
 
 </br>
 
@@ -48,105 +47,105 @@ Multinomial Naive Bayes Classifier:
 
 __Performance__
 
-| &emsp;Metric&emsp; | &emsp;Result&emsp; |
+| Metric | Result |
 |---|---|
-| &emsp;Accuracy&emsp; | &emsp;48.86%&emsp; |
-| &emsp;F1 Score&emsp; | &emsp;46.14%&emsp; |
-| &emsp;Precision Score&emsp; | &emsp;47.60%&emsp; |
-| &emsp;Recall Score&emsp; | &emsp;47.55%&emsp; |
+| Accuracy | 48.86% |
+| F1 Score | 46.14% |
+| Precision Score | 47.60% |
+| Recall Score | 47.55% |
 
 </br>
 
 __Lowest/Highest Precision__
 
-| &emsp;  Class &emsp;  | &emsp;  Precision &emsp;  | &emsp;  Support &emsp;  |
+|   Class   |   Precision   |   Support   |
 |   ---   |   ---:   |   ---:   |
-| &emsp;  consultant  &emsp;  | &emsp;  9.09% &emsp;  | &emsp;  131 &emsp;  |
-| &emsp;  business consultant &emsp;  | &emsp;  11.76%  &emsp;  | &emsp;  48  &emsp;  |
-| &emsp;  director  &emsp;  | &emsp;  16.67%  &emsp;  | &emsp;  119 &emsp;  |
-| &emsp;  manager &emsp;  | &emsp;  21.21%  &emsp;  | &emsp;  127 &emsp;  |
-| &emsp;  it specialist &emsp;  | &emsp;  22.22%  &emsp;  | &emsp;  64  &emsp;  |
-| &emsp;  build and release engineer  &emsp;  | &emsp;  82.22%  &emsp;  | &emsp;  131 &emsp;  |
-| &emsp;  database administrator  &emsp;  | &emsp;  83.47%  &emsp;  | &emsp;  123 &emsp;  |
-| &emsp;  caregiver &emsp;  | &emsp;  86.67%  &emsp;  | &emsp;  66  &emsp;  |
-| &emsp;  android engineer  &emsp;  | &emsp;  88.89%  &emsp;  | &emsp;  61  &emsp;  |
-| &emsp;  ios engineer  &emsp;  | &emsp;  89.58%  &emsp;  | &emsp;  52  &emsp;  |
+|   consultant    |   9.09%   |   131   |
+|   business consultant   |   11.76%    |   48    |
+|   director    |   16.67%    |   119   |
+|   manager   |   21.21%    |   127   |
+|   it specialist   |   22.22%    |   64    |
+|   build and release engineer    |   82.22%    |   131   |
+|   database administrator    |   83.47%    |   123   |
+|   caregiver   |   86.67%    |   66    |
+|   android engineer    |   88.89%    |   61    |
+|   ios engineer    |   89.58%    |   52    |
 
 
 </br>
 
 __Lowest/Highest Recall__
 
-| &emsp;  Class &emsp;  | &emsp;  Recall  &emsp;  | &emsp;  Support &emsp;  |
+|   Class   |   Recall    |   Support   |
 |   ---   |   ---:   |   ---:   |
-| &emsp;  consultant  &emsp;  | &emsp;  1.53% &emsp;  | &emsp;  131 &emsp;  |
-| &emsp;  business consultant &emsp;  | &emsp;  4.17% &emsp;  | &emsp;  48  &emsp;  |
-| &emsp;  manager &emsp;  | &emsp;  5.51% &emsp;  | &emsp;  127 &emsp;  |
-| &emsp;  engineer  &emsp;  | &emsp;  7.63% &emsp;  | &emsp;  118 &emsp;  |
-| &emsp;  director  &emsp;  | &emsp;  10.92%  &emsp;  | &emsp;  119 &emsp;  |
-| &emsp;  build and release engineer  &emsp;  | &emsp;  84.73%  &emsp;  | &emsp;  131 &emsp;  |
-| &emsp;  salesforce engineer &emsp;  | &emsp;  85.09%  &emsp;  | &emsp;  114 &emsp;  |
-| &emsp;  android engineer  &emsp;  | &emsp;  91.80%  &emsp;  | &emsp;  61  &emsp;  |
-| &emsp;  net engineer  &emsp;  | &emsp;  91.82%  &emsp;  | &emsp;  110 &emsp;  |
-| &emsp;  technical recruiter &emsp;  | &emsp;  94.95%  &emsp;  | &emsp;  99  &emsp;  |
+|   consultant    |   1.53%   |   131   |
+|   business consultant   |   4.17%   |   48    |
+|   manager   |   5.51%   |   127   |
+|   engineer    |   7.63%   |   118   |
+|   director    |   10.92%    |   119   |
+|   build and release engineer    |   84.73%    |   131   |
+|   salesforce engineer   |   85.09%    |   114   |
+|   android engineer    |   91.80%    |   61    |
+|   net engineer    |   91.82%    |   110   |
+|   technical recruiter   |   94.95%    |   99    |
 
 </br>
 
 __Lowest/Highest F-Score__
 
-| &emsp;  Class &emsp;  | &emsp;  F-Score &emsp;  | &emsp;  Support &emsp;  |
+|   Class   |   F-Score   |   Support   |
 |   ---   |   ---:   |   ---:   |
-| &emsp;  consultant  &emsp;  | &emsp;  2.61% &emsp;  | &emsp;  131 &emsp;  |
-| &emsp;  business consultant &emsp;  | &emsp;  6.15% &emsp;  | &emsp;  48  &emsp;  |
-| &emsp;  manager &emsp;  | &emsp;  8.75% &emsp;  | &emsp;  127 &emsp;  |
-| &emsp;  engineer  &emsp;  | &emsp;  12.77%  &emsp;  | &emsp;  118 &emsp;  |
-| &emsp;  director  &emsp;  | &emsp;  13.20%  &emsp;  | &emsp;  119 &emsp;  |
-| &emsp;  database administrator  &emsp;  | &emsp;  82.79%  &emsp;  | &emsp;  123 &emsp;  |
-| &emsp;  build and release engineer  &emsp;  | &emsp;  83.46%  &emsp;  | &emsp;  131 &emsp;  |
-| &emsp;  technical recruiter &emsp;  | &emsp;  85.45%  &emsp;  | &emsp;  99  &emsp;  |
-| &emsp;  ios engineer  &emsp;  | &emsp;  86.00%  &emsp;  | &emsp;  52  &emsp;  |
-| &emsp;  android engineer  &emsp;  | &emsp;  90.32%  &emsp;  | &emsp;  61  &emsp;  |
+|   consultant    |   2.61%   |   131   |
+|   business consultant   |   6.15%   |   48    |
+|   manager   |   8.75%   |   127   |
+|   engineer    |   12.77%    |   118   |
+|   director    |   13.20%    |   119   |
+|   database administrator    |   82.79%    |   123   |
+|   build and release engineer    |   83.46%    |   131   |
+|   technical recruiter   |   85.45%    |   99    |
+|   ios engineer    |   86.00%    |   52    |
+|   android engineer    |   90.32%    |   61    |
 
 </br>
 
 __Most Confused__
 
-| &emsp;  Actual Class  &emsp;  | &emsp;  Predicted Class &emsp;  | &emsp;  Cases &emsp;  |
+|   Actual Class    |   Predicted Class   |   Cases   |
 |   ---   |   ---   |   ---:   |
-| &emsp;  accountant  &emsp;  | &emsp;  staff accountant  &emsp;  | &emsp;  38  &emsp;  |
-| &emsp;  marketing director  &emsp;  | &emsp;  marketing manager &emsp;  | &emsp;  35  &emsp;  |
-| &emsp;  java software engineer  &emsp;  | &emsp;  j2ee engineer &emsp;  | &emsp;  32  &emsp;  |
-| &emsp;  associate &emsp;  | &emsp;  cashier &emsp;  | &emsp;  31  &emsp;  |
-| &emsp;  network administrator &emsp;  | &emsp;  network engineer  &emsp;  | &emsp;  30  &emsp;  |
-| &emsp;  manager &emsp;  | &emsp;  general manager &emsp;  | &emsp;  28  &emsp;  |
-| &emsp;  assistant &emsp;  | &emsp;  administrative assistant  &emsp;  | &emsp;  26  &emsp;  |
-| &emsp;  design engineer &emsp;  | &emsp;  mechanical design engineer  &emsp;  | &emsp;  26  &emsp;  |
-| &emsp;  process engineer  &emsp;  | &emsp;  manufacturing engineer  &emsp;  | &emsp;  25  &emsp;  |
-| &emsp;  project manager &emsp;  | &emsp;  it project manager  &emsp;  | &emsp;  25  &emsp;  |
+|   accountant    |   staff accountant    |   38    |
+|   marketing director    |   marketing manager   |   35    |
+|   java software engineer    |   j2ee engineer   |   32    |
+|   associate   |   cashier   |   31    |
+|   network administrator   |   network engineer    |   30    |
+|   manager   |   general manager   |   28    |
+|   assistant   |   administrative assistant    |   26    |
+|   design engineer   |   mechanical design engineer    |   26    |
+|   process engineer    |   manufacturing engineer    |   25    |
+|   project manager   |   it project manager    |   25    |
 
 </br>
 
 ### PCA Analysis
 
-We performed a PCA analysis to test the clustering results from the TD-IDF vectorization of job summaries. The vectors were reduced to a 3-dimensional space and put into the [Embedding Projector](https://projector.tensorflow.org/) website. The below results show that different job summaries for the same job share a lot of the same skills and language.
+We performed a PCA analysis to test the clustering results from the TD-IDF vectorization of job summaries. The vectors were reduced to a 3-dimensional space and put into the <a href="https://projector.tensorflow.org/" target="_blank">Embedding Projector</a> website. The below results show that different job summaries for the same job share a lot of the same skills and language.
 
 </br>
 
-1. Below are the 500 closest job summaries to a randomly selected ___Android Engineer___ job summary. A majority of these job summaries have the job title Android Engineer indicating that Android Engineers view and discribe their roles similarly.
+1. Below are the 500 closest job summaries to a randomly selected ___Android Engineer___ job summary. Many of these job summaries have the job title Android Engineer indicating that Android Engineers view and describe their roles similarly.
 
-&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_android_engineer.png" width="1000">
+&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_android_engineer.png" width="1000">
 
 2. Below are the 500 closest job summaries to a randomly selected ___Consultant___ job summary. Many different job titles are represented in this group. It appears the role of a Consultant is much more variable than that of an Android Engineer.
 
-&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_consultant.png" width="1000">
+&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_consultant.png" width="1000">
 
 </br>
 
 3. Just for fun, we selected a random ___Data Scientist___ job summary. The Data Scientist role appears to be at the intersection of data analysis, engineering, product management, and research. ;)
 
-&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_data_scientist.png" width="1000">
+&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_data_scientist.png" width="1000">
 
-To play with the data yourself, you can input our [vector file](https://drive.google.com/open?id=1y9wjQhVtUC7Z3APXqlJ8D-04CP5N4mWN) and [metadata file](https://drive.google.com/open?id=1w4LXTvw0G-g6Wg1_lZL5DHFl646J6cf4) to this website: [https://projector.tensorflow.org/](https://projector.tensorflow.org/) 
+To play with the data yourself, you can input our <a href="https://drive.google.com/open?id=1y9wjQhVtUC7Z3APXqlJ8D-04CP5N4mWN" target="_blank">vector file</a> and <a href="https://drive.google.com/open?id=1w4LXTvw0G-g6Wg1_lZL5DHFl646J6cf4" target="_blank">metadata file</a> to this website: <a href="https://projector.tensorflow.org/" target="_blank">projector.tensorflow.org</a> 
 
 </br>
 
@@ -156,14 +155,18 @@ To play with the data yourself, you can input our [vector file](https://drive.go
 
 </br>
 
+---------------------------------------
+
+</br>
+
 
 ## [2] Job Skills Model
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_app.png" width="1000">
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_app.png" width="500">
 
-[Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
+To produce useful skills information, we created a model like the Document Similarity Model with a few differences.
 
-In order to produce useful skills information, we created a model similar to the Document Similarity Model with a few differences.
+<a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb" target="_blank">Link to Code</a> 
 
 </br>
 
@@ -187,28 +190,31 @@ Oversampling:
 
 ### Model Performance
 
-| &emsp;Metric&emsp; | &emsp;Result&emsp; |
+| Metric | Result |
 |---|---|
-| &emsp;Accuracy&emsp; | &emsp;39.30%&emsp; |
-| &emsp;F1 Score&emsp; | &emsp;35.57%&emsp; |
-| &emsp;Precision Score&emsp; | &emsp;36.70%&emsp; |
-| &emsp;Recall Score&emsp; | &emsp;36.12%&emsp; |
+| Accuracy | 39.30% |
+| F1 Score | 35.57% |
+| Precision Score | 36.70% |
+| Recall Score | 36.12% |
 
 </br>
 
 ### Example Outputs
 
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_technical_writer.png" height="300"><img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_front_end_engineer.png" height="300"><img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_data_scientist.png" height="300">
+
 </br>
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_technical_writer.png" height="300">&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_front_end_engineer.png" height="300">&emsp;&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_data_scientist.png" height="300">
+---------------------------------------
 
 </br>
 
 ## [3] Time-Based Model (Not Productionized)
 
-[Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/07_process_model_software_engineer_over_time.ipynb)
+The resumes we collected contained a large number of ___software engineering___ roles, so we thought it would be interesting to create a classification model to derive the most important software engineering skills throughout time. Below are the highest weighted skills for each time period. __This model is not included in the app.__
 
-The resumes we collected contained a large number of ___software engineering___ roles, so we thought it would be interesting to create a classification model to derive the most important skills for different periods of time for software engineers. Below are the highest weighted skills for each timeframe. __This model is not included in the app.__
+<a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/07_process_model_software_engineer_over_time.ipynb" target="_blank">Link to Code</a> 
+
 
 </br>
 
@@ -218,12 +224,15 @@ The resumes we collected contained a large number of ___software engineering___ 
 Number of Classes:
     5
 
+Train-Test Split:
+    62,440 / 3287 (95% / 5%)
+
 TD-IDF Vectorizer:
     Min_df: 0
     Ngram_range: [2,4]
 
 Oversampling:
-    Less common jobs were oversampled to 2500 records using the regular Synthetic Minority Over-sampling Technique (SMOTE).
+    Classes were balanced using the regular Synthetic Minority Over-sampling Technique (SMOTE).
 
 Multinomial Naive Bayes Classifier:
     Alpha: 0.1
@@ -233,46 +242,52 @@ Multinomial Naive Bayes Classifier:
 
 ### Model Performance
 
-| &emsp;Metric&emsp; | &emsp;Result&emsp; |
-|---|---|
-| &emsp;Accuracy&emsp; | &emsp;54.52%%&emsp; |
+|    Class |  Precision |  Recall | F-Score | Support|
+|   --- |  ---: | ---: | ---: | ---:|
+|   1900-1998 |  67.66% | 57.38% | 62.10% | 474|
+|   1998-2003 |  46.68% | 42.27% | 44.37% | 466|
+|   2003-2008 |  45.39% | 40.85% | 43.00% | 639|
+|   2008-2013 |  43.86% | 56.57% | 49.41% | 776|
+|   2013-2018 |  70.46% | 67.06% | 68.72% | 932|
 
 </br>
 
 ### Results
 
-Technology is one of the fastest changing industries. From this model, we can see the rise to prominence and the fall of different tools throughout time.
+Technology is one of the fastest changing industries. From this model, we can see the rise to prominence and the fall of different software engineering tools throughout time.
 
-|   &emsp;  Earlier-1998    &emsp;  |   &emsp;  1998-2003   &emsp;  |   &emsp;  2003-2008   &emsp;  |   &emsp;  2008-2013   &emsp;  |   &emsp;  2013-2018   &emsp;  |
+|     Earlier-1998      |     1998-2003     |     2003-2008     |     2008-2013     |     2013-2018     |
 |       ---     |       ---     |       ---     |       ---     |       ---     |
-|   &emsp;  development team    &emsp;  |   &emsp;  database design &emsp;  |   &emsp;  unit testing    &emsp;  |   &emsp;  management system   &emsp;  |   &emsp;  version control &emsp;  |
-|   &emsp;  test plan   &emsp;  |   &emsp;  rational rose   &emsp;  |   &emsp;  <span style="color:blue">___crystal report___</span>  &emsp;  |   &emsp;  html cs javascript  &emsp;  |   &emsp;  unit testing    &emsp;  |
-|   &emsp;  window nt   &emsp;  |   &emsp;  client server   &emsp;  |   &emsp;  java j2ee   &emsp;  |   &emsp;  test plan   &emsp;  |   &emsp;  web application using   &emsp;  |
-|   &emsp;  software design &emsp;  |   &emsp;  vb net  &emsp;  |   &emsp;  net asp net &emsp;  |   &emsp;  data access &emsp;  |   &emsp;  <span style="color:green">___visual studio___</span>   &emsp;  |
-|   &emsp;  customer support    &emsp;  |   &emsp;  <span style="color:blue">___crystal report___</span>  &emsp;  |   &emsp;  web base    &emsp;  |   &emsp;  front end   &emsp;  |   &emsp;  full stack  &emsp;  |
-|   &emsp;  tcp ip  &emsp;  |   &emsp;  <span style="color:purple">___using visual basic___</span>  &emsp;  |   &emsp;  software development    &emsp;  |   &emsp;  sql query   &emsp;  |   &emsp;  develop maintain    &emsp;  |
-|   &emsp;  programmer analyst  &emsp;  |   &emsp;  store procedure &emsp;  |   &emsp;  oracle 9i   &emsp;  |   &emsp;  design implement    &emsp;  |   &emsp;  store procedure &emsp;  |
-|   &emsp;  cobol ii    &emsp;  |   &emsp;  software application    &emsp;  |   &emsp;  html cs &emsp;  |   &emsp;  java j2ee   &emsp;  |   &emsp;  technology use  &emsp;  |
-|   &emsp;  ibm mainframe   &emsp;  |   &emsp;  tcp ip  &emsp;  |   &emsp;  develop test    &emsp;  |   &emsp;  <span style="color:green">___visual studio___</span>   &emsp;  |   &emsp;  new feature &emsp;  |
-|   &emsp;  client server   &emsp;  |   &emsp;  pl sql  &emsp;  |   &emsp;  store procedure &emsp;  |   &emsp;  new feature &emsp;  |   &emsp;  code review &emsp;  |
-|   &emsp;  system use  &emsp;  |   &emsp;  technology use  &emsp;  |   &emsp;  role responsibility &emsp;  |   &emsp;  using asp net   &emsp;  |   &emsp;  agile scrum &emsp;  |
-|   &emsp;  assembly language   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  window xp   &emsp;  |   &emsp;  unit testing    &emsp;  |   &emsp;  rest api    &emsp;  |
-|   &emsp;  user interface  &emsp;  |   &emsp;  data warehouse  &emsp;  |   &emsp;  team member &emsp;  |   &emsp;  application use &emsp;  |   &emsp;  design implement    &emsp;  |
-|   &emsp;  device driver   &emsp;  |   &emsp;  development team    &emsp;  |   &emsp;  design implementation   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  using asp net   &emsp;  |
-|   &emsp;  develop implement   &emsp;  |   &emsp;  html javascript &emsp;  |   &emsp;  business logic  &emsp;  |   &emsp;  web base    &emsp;  |   &emsp;  entity framework    &emsp;  |
-|   &emsp;  <span style="color:purple">___using visual basic___</span>  &emsp;  |   &emsp;  responsibility include  &emsp;  |   &emsp;  <span style="color:purple">___visual basic___</span>    &emsp;  |   &emsp;  software engineer   &emsp;  |   &emsp;  management system   &emsp;  |
-|   &emsp;  vax vms &emsp;  |   &emsp;  operating system    &emsp;  |   &emsp;  management system   &emsp;  |   &emsp;  business logic  &emsp;  |   &emsp;  development team    &emsp;  |
-|   &emsp;  pl sql  &emsp;  |   &emsp;  technical support   &emsp;  |   &emsp;  user interface  &emsp;  |   &emsp;  code review &emsp;  |   &emsp;  software engineer   &emsp;  |
-|   &emsp;  responsibility include  &emsp;  |   &emsp;  web service &emsp;  |   &emsp;  net sql server  &emsp;  |   &emsp;  responsibility involve  &emsp;  |   &emsp;  sql server  &emsp;  |
+|     development team      |     database design   |     unit testing      |     management system     |     version control   |
+|     test plan     |     rational rose     |     <span style="color:orange">___crystal report___</span>    |     html cs javascript    |     unit testing      |
+|     window nt     |     client server     |     java j2ee     |     test plan     |     web application using     |
+|     software design   |     vb net    |     net asp net   |     data access   |     <span style="color:red">___visual studio___</span>     |
+|     customer support      |     <span style="color:orange">___crystal report___</span>    |     web base      |     front end     |     full stack    |
+|     tcp ip    |     <span style="color:blue">___using visual basic___</span>    |     software development      |     sql query     |     develop maintain      |
+|     programmer analyst    |     store procedure   |     oracle 9i     |     design implement      |     store procedure   |
+|     cobol ii      |     software application      |     html cs   |     java j2ee     |     technology use    |
+|     ibm mainframe     |     tcp ip    |     develop test      |     <span style="color:red">___visual studio___</span>     |     new feature   |
+|     client server     |     pl sql    |     store procedure   |     new feature   |     code review   |
+|     system use    |     technology use    |     role responsibility   |     using asp net     |     agile scrum   |
+|     assembly language     |     user interface    |     window xp     |     unit testing      |     rest api      |
+|     user interface    |     data warehouse    |     team member   |     application use   |     design implement      |
+|     device driver     |     development team      |     design implementation     |     user interface    |     using asp net     |
+|     develop implement     |     html javascript   |     business logic    |     web base      |     entity framework      |
+|     <span style="color:blue">___using visual basic___</span>    |     responsibility include    |     <span style="color:blue">___visual basic___</span>      |     software engineer     |     management system     |
+|     vax vms   |     operating system      |     management system     |     business logic    |     development team      |
+|     pl sql    |     technical support     |     user interface    |     code review   |     software engineer     |
+|     responsibility include    |     web service   |     net sql server    |     responsibility involve    |     sql server    |
+
+</br>
+
+---------------------------------------
 
 </br>
 
 ## [4] Next Steps
 
-1. Currently, the model considers similar ngrams like `accounts payable balance` and `organize accounts payable` to be completely different phrases. We would like to test training a vectorization model, like Doc2Vec, to place similar ngrams closer to each other in the vector space.
+1. Currently, these models consider similar ngrams like `accounts payable balance` and `organize accounts payable` to be completely different phrases. We want to explore different vectorization models, like Doc2Vec and OpenAI Transformer, to place similar ngrams closer to each other in the vector space.
 
-2. We would also like to test vect creation using the OpenAI Transformer model.
+2. We will expand the number of classes used in the model.
 
-3. We would like to expand the number of classes used in the model.
-
-4. We would like to incorporate a time component to the app. Can we see changes in the skills needed for each job?
+3. We are interested in incorporating a time component to the app. Can we model changes in job skills over time?

@@ -956,13 +956,17 @@ footer .footer-manu ul li a:hover {
 table {
   /*border-collapse: collapse;*/
   border:2px solid;
-  border-width: 5;
+  /*border-width: 5;*/
 }
 
 th {
+  font-size: 16px;
+  font-weight: 800;
   border:2px solid;
+  padding: 5px 10px;
 }
 
 td {
   border:2px solid;
+  padding: 5px 10px;
 }
