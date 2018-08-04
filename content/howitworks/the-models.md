@@ -10,9 +10,10 @@ author = "iCareer Climber Team"
 
 [Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
 
-We provide career recommendations in a ranked order based on the similarity of a job seeker's current/past job experiences. Our model is powered by resume information all across the US.
+We provide career recommendations in a ranked order based on the similarity of a job seeker's current job experiences. Our model is powered by resume information all across the US. This product is a proof of concept and contains a small subset of possible jobs (114 unique job titles). The list of jobs is derived from the availability of salary and resume data. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years.
 
-This product is a proof of concept and contains a small subset of possible jobs. Our model contains 114 unique job titles. The list of job titles is derived from the availability of salary information. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years. We had used 230k job summaries to train and test our model. 
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image1.png" width="1000">
+
 
 </br>
 
@@ -127,21 +128,21 @@ __Most Confused__
 
 ### PCA Analysis
 
-We performed a PCA analysis to test the clustering from the TD-IDF vectorization. The vectors were reduced to a 3-dimensional space and put into the [Embedding Projector](https://projector.tensorflow.org/) website. The below results reinforce the model performance results.
+We performed a PCA analysis to test the clustering results from the TD-IDF vectorization of job summaries. The vectors were reduced to a 3-dimensional space and put into the [Embedding Projector](https://projector.tensorflow.org/) website. The below results show that different job summaries for the same job share a lot of the same skills and language.
 
 </br>
 
-1. Below are the closest 500 points to a randomly selected ___consultant___ point. The language used in the consultant's resume is similar to jobs in many different domains. 
+1. Below are the 500 closest job summaries to a randomly selected ___Android Engineer___ job summary. A majority of these job summaries have the job title Android Engineer indicating that Android Engineers view and discribe their roles similarly.
+
+&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_android_engineer.png" width="1000">
+
+2. Below are the 500 closest job summaries to a randomly selected ___Consultant___ job summary. Many different job titles are represented in this group. It appears the role of a Consultant is much more variable than that of an Android Engineer.
 
 &emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_consultant.png" width="1000">
 
 </br>
 
-2. Below are the closest 500 points to a randomly selected ___android engineer___ point. A majority of the closest points are android engineer.
-
-&emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_android_engineer.png" width="1000">
-
-3. Just for fun, we selected a random ___data scientist___ point. Data Scientists appear to be at the intersection of data anlysis, data engineering, software engineering, product management, and research. ;)
+3. Just for fun, we selected a random ___Data Scientist___ job summary. The Data Scientist role appears to be at the intersection of data analysis, engineering, product management, and research. ;)
 
 &emsp;&emsp;<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/pca_viz_data_scientist.png" width="1000">
 
@@ -151,7 +152,7 @@ To play with the data yourself, you can input our [vector file](https://drive.go
 
 ### Example Output
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image.png" width="1000">
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image2.png" width="1000">
 
 </br>
 
@@ -160,7 +161,7 @@ To play with the data yourself, you can input our [vector file](https://drive.go
 
 [Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
 
-In order to produce useful skills information, we created a model similar to the one above with a few differences.
+In order to produce useful skills information, we created a model similar to the Document Similarity Model with a few differences.
 
 </br>
 

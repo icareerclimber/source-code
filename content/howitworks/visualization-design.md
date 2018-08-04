@@ -4,6 +4,8 @@ date = "2018-07-28"
 author = "iCareer Climber Team"
 +++
 
+</br>
+
 ## Salary Barchart
 
 [Visualization](http://people.ischool.berkeley.edu/~keri.wheatley/w210_salary_bar_chart/) | [Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/d3_viz/salary_bar_chart)&emsp;&emsp;Built using D3.js
@@ -14,6 +16,7 @@ Next Steps - Create a visualizaion that shows jobs with decreasing/increasing de
 
 <img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/salary-barchart.png" width="470">
 
+</br>
 
 ## Education Barchart
 
@@ -25,6 +28,7 @@ Next Steps - Add identifor for STEM versus non-STEM degrees.
 
 <img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/education-barchart.png" width="470">
 
+</br>
 
 ## Job Title Hierarchy Tree Graph
 

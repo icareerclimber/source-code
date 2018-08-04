@@ -16,7 +16,7 @@ Using Python Selenium and Beautiful Soup libraries to build web scraping tools, 
 
 ## [2] Data Transformation
 
-Data ingestion pipelines were created to standardize the data inputs from various sources.
+Data ingestion pipelines were created to standardize the data inputs from the various sources.
 
 </br>
 
@@ -32,7 +32,7 @@ Transformation: ```Senior Software Engineer II``` &rarr; ```['software engineer'
 
 #### Job Description
 
-Job descriptions were preprocessed to use for classification modeling. Preprocessing included lemmanization, stopword removal, special character removal, altering contraction, and tokenization. 
+Job descriptions were preprocessed and used to create various classification models. Preprocessing included lemmanization, stopword removal, special character removal, contraction altering, and tokenization. 
 
 Transformation: ```.• Balance daily workflow of prospecting, responding to leads, scheduling and conducting appointments and maintain phone-based client relationships .• Conduct dynamic sales presentations for potential customers .• Use product knowledge and sales skills to recommend suggested products or services to fulfill customers' needs.``` &rarr; ```[' balance daily workflow prospecting responding lead scheduling conducting appointment maintain phonebased client relationship conduct dynamic sale presentation potential customer use product knowledge sale skill recommend suggest product service fulfill customer need ']```
 
@@ -42,7 +42,7 @@ Transformation: ```.• Balance daily workflow of prospecting, responding to lea
 
 #### Education Title
 
-We created a rules-based logic to separate degree type from subject and processed all education information.
+We created a rules-based logic to separate degree type from degree subject and processed all education information.
 
 Transformation: ```B.S. in Business Administration and Management``` &rarr; ```[['business administration and management'],['bachelors']]```
 
@@ -74,8 +74,8 @@ Transformation: ```AKRON, OH``` &rarr; ```[['akron'],['Ohio']]```
 
 1. Collect more data.
 
-2. Identify new ways to group job titles.
+2. Identify new methods to group job titles.
 
-3. Identify new ways to parse degree from subject.
+3. Identify new methods to parse degree from subject.
 
-4. Group degree types into STEM or non-STEM.
+4. Categorize degrees as STEM or non-STEM.

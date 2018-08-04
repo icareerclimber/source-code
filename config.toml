@@ -32,13 +32,15 @@ theme = "airspace-hugo"
   [params.slider]
     enable = true
     title = "iCareer Climber"
-    subtitle = "Giving you the data behind careers"
+    subtitle = "Eliminate Guesswork from Your Career Planning"
 
   [params.wrapper]
     enable = true
-    title = "About Us"
-    italic = "iCareer Climber takes resume information and digests it to be useful information for the job seeker."
-    paragraph = "The best resources for career guidance today are top 10 articles and static databases. By creating a data pipeline that processes historical career information, we are able to derive key career attributes for the user. Our work has shown promising results. The wisdom of the crowd can in fact be leveraged to guide our users to their next step."
+    title1 = "About Us"
+    italic = "iCareer Climber transforms hundreds of thousands of resumes into digestable information for the job seeker. Our tools give job seekers the power to tackle their next career move."
+    paragraph1 = "Today, the best resources for career guidance are Top 10 articles and stale databases. By combining data mining, machine learning, and user experience, we have pulled together key career information for today's job seeker."
+    paragraph2 = "Our work shows promising results. The wisdom of the crowd can in fact be leveraged to guide job seekers to their next move."
+    title2 = "Our Product"
 
   [params.howitworks]
     enable = true
