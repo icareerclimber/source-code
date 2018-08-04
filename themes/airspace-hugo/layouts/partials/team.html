@@ -1,0 +1,30 @@
+<!-- Team Start -->
+<section id="team">
+  <div class="container">
+    
+    <!-- Intro -->
+    <div class="row">
+      <div class="section-title">
+        <h2>{{ .Site.Data.team.title }}</h2>
+        <p>{{ .Site.Data.team.subtitle }}</p>
+      </div>
+    </div>
+
+    <!-- Content -->
+    <div class="row-center" >
+      {{ range .Site.Data.team.content }}
+      <div class="col-sm-6 col-md-3">
+        <div class="team-item">
+          <img src="{{ .Site.BaseURL }}/img/{{ .image }}" alt="IMG">
+          <h4>{{ .name }}</h4>
+          <p>{{ .text1 }}</p>
+          <p>{{ .text2 }}</p>
+          <a href="mailto:{{ .email }}" ><i class="ion-email"></i></a>
+          <a href="{{ .linkedin }}" target="_blank"><i class="ion-social-linkedin"></i></a>
+          <a href="{{ .github }}" target="_blank"><i class="ion-social-github"></i></a>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

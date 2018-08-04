@@ -1,0 +1,22 @@
+<!-- Youtube Start -->
+<section id="youtube">
+  <div class="container">
+    
+    <!-- Intro -->
+    <div class="row">
+      <div class="section-title">
+        <h2>{{ .Site.Data.youtube.title }}</h2>
+      </div>
+    </div>
+
+  <div class="embed video-player">
+      <iframe class="youtube-player" type="text/html"
+          width="640" height="385"
+          src="https://www.youtube.com/embed/{{ .Site.Data.youtube.link }}"
+          allowfullscreen frameborder="0">
+      </iframe>
+  </div>
+
+
+  </div>
+</section>

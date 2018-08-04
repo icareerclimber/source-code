@@ -1,0 +1,25 @@
+<!-- Portfolio Start -->
+<section id="portfolio-work">
+    <div class="container">
+
+      <!-- Intro -->
+      <div class="row">
+        <div class="work-title">
+          <h2>Next Steps</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="work-title">
+          <p>Model</p>
+        </div>
+      </div>
+
+
+    </div>
+</section>
+
+
+{{ if isset .Site.Data.work "call" }}
+  {{ partial "call-to-action.html" .Site.Data.work.call }}
+{{ end}}
