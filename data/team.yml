@@ -3,7 +3,7 @@ title: Our Team
 subtitle: >
 content:
 
-  - image: keri.jpg
+  - image: keri.png
     name: Karin Belsvik Brodd
     text1: >
       Software Engineer at G2 Web Services
@@ -13,7 +13,7 @@ content:
     linkedin: https://www.linkedin.com/in/karin-belsvik-brodd/
     github: https://github.com/kbelsvik
 
-  - image: keri.jpg
+  - image: keri.png
     name: Keri Wheatley
     text1: >
       Data Scientist at Civitas Learning
