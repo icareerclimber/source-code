@@ -12,7 +12,7 @@ author = "iCareer Climber Team"
 
 We provide career recommendations in a ranked order based on the similarity of a job seeker's current job experiences. Our model is powered by resume information all across the US. This product is a proof of concept and contains a small subset of possible jobs (114 unique job titles). The list of jobs is derived from the availability of salary and resume data. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years.
 
-<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image1.png" width="1000" border="10">
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/doc_similarity_image1.png" width="1000">
 
 
 </br>
@@ -158,6 +158,8 @@ To play with the data yourself, you can input our [vector file](https://drive.go
 
 
 ## [2] Job Skills Model
+
+<img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/skills_app.png" width="1000">
 
 [Link to Code](https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb)
 
