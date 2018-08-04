@@ -15,12 +15,7 @@ This visualization was built using D3.js. &emsp;&emsp;[Visualization](http://peo
 
 This visualization was built using D3.js. &emsp;&emsp;[Visualization](http://people.ischool.berkeley.edu/~keri.wheatley/w210_edu_bar_chart/) | [Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/d3_viz/education_histogram)
 
-
-Next Steps - 
-
-1. Add identifor for STEM versus non-STEM degrees.
-
-2. Improve processing speed.
+Next Steps - Add identifor for STEM versus non-STEM degrees.
 
 <img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/education-barchart.png" width="470">
 
