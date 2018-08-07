@@ -4,7 +4,7 @@ date = "2018-07-27"
 author = "iCareer Climber Team"
 +++
 
-### The Application
+## The Backend Application
 
 The backend is a Flask application whose primary purpose is to accept job description inputs and output job similarity scores using the model.  This allows us to serve up model results for consumption by the frontend application.
 
@@ -12,7 +12,10 @@ The backend is a Flask application whose primary purpose is to accept job descri
 
 The application is built as a docker container which can easily be tested locally and then uploaded to Google Cloud Container Registry and deployed to Google Cloud using Kubernetes.
 
+
 The models are stored in a Google Cloud Storage bucket, which is mounted to the application container using [FUSE](https://cloud.google.com/storage/docs/gcs-fuse).
+
+### The API Requests
 
 The backend is a basic REST api which accepts and serves JSON data.
 
@@ -44,6 +47,3 @@ $ curl -XPOST -H 'Content-Type: application/json' -d '{"experience":[{"descripti
             "title": "program manager"
         },
 ```
-
-images built using docker
-uploaded to google cloud container storage
