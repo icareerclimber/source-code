@@ -8,12 +8,14 @@ author = "iCareer Climber Team"
 
 The backend is a Flask application whose primary purpose is to accept job description inputs and output job similarity scores using the model.  This allows us to serve up model results for consumption by the frontend application.
 
+[Link to Code](https://github.com/kbelsvik/career-skills-capstone/tree/master/careers-api)
+
 ![Backend Architecture](images_folder/Backend-arch.png "Backend Architecture")
 
-The application is built as a docker container which can easily be tested locally and then uploaded to Google Cloud Container Registry and deployed to Google Cloud using Kubernetes.
+The application is built as a docker container which can easily be tested locally and then uploaded to Google Cloud Container Registry and deployed to a Google Cloud cluster with Kubernetes.
 
 
-The models are stored in a Google Cloud Storage bucket, which is mounted to the application container using [FUSE](https://cloud.google.com/storage/docs/gcs-fuse).
+The models are stored in a Google Cloud Storage bucket, which is mounted to the application container using [FUSE](https://cloud.google.com/storage/docs/gcs-fuse).  The models are stored as picked Scikit Learn models which can be loaded into the Flask application.
 
 ### The API Requests
 
