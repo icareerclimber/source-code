@@ -4,9 +4,11 @@ date = "2018-07-26"
 author = "iCareer Climber Team"
 +++
 
-</br>
+<a href="https://github.com/kbelsvik/career-skills-capstone/tree/master/ui" target="_blank">Link to Code</a>
 
 <img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/frontend.png" width="500">
+
+</br>
 
 ## [1] UI Layer
 The UI layer has three components: A grid layout is created using Bootstrap, User interaction logic and state is maintained using React JS; and D3.js is used for visualization. The JavaScript libraries are sourced directly from cdn, while the Ajax style communication between the UI and the frontend web server is facilitated by Axios JS library. To simplify design, user input is passed to frontend server via http extension header instead of the traditional http form POST method. Given the nature of user submission, where resume is rarely bigger than 16kB, such design is sufficient for practical purposes.
