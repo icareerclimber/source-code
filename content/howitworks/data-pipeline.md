@@ -22,7 +22,7 @@ Data ingestion pipelines were created to standardize the data inputs from the va
 
 #### Jobs Title
 
-Job titles vary widely from resume to resume, so we created a heuristic to process each job title into a standard format. To group different levels of the same job, we created a list of "job qualifiers" for each job and removed those words from the job title. Job qualifiers were manually determined and include words like *Lead*, *Senior*, *Junior*, *I*, and *Level 2*.
+Job titles vary widely from resume to resume, so we created a heuristic to process each job title into a standard format. To group different levels of the same job, we created a list of "experience qualifiers" for each job and removed those words from the job title. Experience qualifiers were manually determined and include words like *Lead*, *Senior*, *Junior*, *I*, and *Level 2*.
 
 Transformation: ```Senior Software Engineer II``` &rarr; ```['software engineer',['senior','2']]```
 
