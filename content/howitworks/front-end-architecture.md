@@ -33,7 +33,6 @@ UX testing needs to be done early and often.
 </br>
 
 ## [5] Next Steps
-1. Bug fix
-2. Add an upload link to upload resume and parse contents
-3. Refactor spaghetti code
-4. Making user interaction more friendly, maybe using a chatbot
+1. Add an upload link to upload resume and parse contents
+2. Refactor spaghetti code
+3. Making user interaction more friendly, maybe using a chatbot
