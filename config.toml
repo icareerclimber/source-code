@@ -11,10 +11,6 @@ theme = "airspace-hugo"
     url = "/howitworks"
   [[menu.header]]
     weight = 3
-    name = "Live Demo"
-    url = "/demo"
-  [[menu.header]]
-    weight = 4
     name = "Team"
     url = "/team"
 
@@ -28,10 +24,6 @@ theme = "airspace-hugo"
     url = "/howitworks"
   [[menu.footer]]
     weight = 3
-    name = "Live Demo"
-    url = "/demo"
-  [[menu.footer]]
-    weight = 4
     name = "Team"
     url = "/team"
 # The site's parameters
