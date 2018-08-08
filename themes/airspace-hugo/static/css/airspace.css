@@ -250,6 +250,11 @@ font header .navbar-default .navbar-nav li a:hover {
 /*--
   youtube Start
 --*/
+.youtube-player {
+  text-align: center;
+}
+
+
 #youtube {
   text-align: center;
   padding: 90px 0;

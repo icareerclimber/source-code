@@ -8,7 +8,7 @@ author = "iCareer Climber Team"
 
 ## [1] The Backend Application
 
-<a href="https://github.com/kbelsvik/career-skills-capstone/tree/master/careers-api" target="_blank">Link to Code</a>
+<a href="https://github.com/icareerclimber/career-skills-capstone/tree/master/careers-api" target="_blank">Link to Code</a>
 
 The backend is a Flask application whose primary purpose is to accept job description inputs and output job similarity scores using the model.  This allows us to serve up model results for consumption by the frontend application.
 

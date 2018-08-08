@@ -4,7 +4,7 @@ date = "2018-07-26"
 author = "iCareer Climber Team"
 +++
 
-<a href="https://github.com/kbelsvik/career-skills-capstone/tree/master/ui" target="_blank">Link to Code</a>
+<a href="https://github.com/icareerclimber/career-skills-capstone/tree/master/ui" target="_blank">Link to Code</a>
 
 <img src="https://raw.githubusercontent.com/icareerclimber/source-code/master/content/howitworks/images_folder/frontend.png" width="500">
 

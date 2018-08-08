@@ -12,7 +12,7 @@ author = "iCareer Climber Team"
 
 We provide career recommendations in a ranked order based on the similarity of a job seeker's current job experiences. Our model is powered by resume information across the US. This product is a proof of concept and contains a small subset of possible jobs (114 unique job titles). The list of jobs is derived from the availability of salary and resume data. We selected all jobs that contained at least 100 salary records in the past 5 years and 500 resume job summaries in the past 10 years.
 
-<a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb" target="_blank">Link to Code</a>
+<a href="https://github.com/icareerclimber/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb" target="_blank">Link to Code</a>
 
 </br>
 
@@ -166,7 +166,7 @@ To play with the data yourself, you can input our <a href="https://drive.google.
 
 To produce useful skills information, we created a model like the Document Similarity Model with a few differences.
 
-<a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb" target="_blank">Link to Code</a> 
+<a href="https://github.com/icareerclimber/career-skills-capstone/blob/master/model_pipeline/03_process_salary_and_create_ngram_model.ipynb" target="_blank">Link to Code</a> 
 
 </br>
 
@@ -213,7 +213,7 @@ Oversampling:
 
 The resumes we collected contained a large number of ___software engineering___ roles, so we thought it would be interesting to create a classification model to derive the most important software engineering skills throughout time. Below are the highest weighted skills for each time period. __This model is not included in the app.__
 
-<a href="https://github.com/kbelsvik/career-skills-capstone/blob/master/model_pipeline/07_process_model_software_engineer_over_time.ipynb" target="_blank">Link to Code</a> 
+<a href="https://github.com/icareerclimber/career-skills-capstone/blob/master/model_pipeline/07_process_model_software_engineer_over_time.ipynb" target="_blank">Link to Code</a> 
 
 
 </br>
