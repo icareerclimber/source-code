@@ -91,9 +91,9 @@ __Lowest/Highest Recall__
 
 </br>
 
-__Lowest/Highest F-Score__
+__Lowest/Highest F1-Score__
 
-|   Class   |   F-Score   |   Support   |
+|   Class   |   F1-Score   |   Support   |
 |   ---   |   ---:   |   ---:   |
 |   consultant    |   2.61%   |   131   |
 |   business consultant   |   6.15%   |   48    |
@@ -242,7 +242,7 @@ Multinomial Naive Bayes Classifier:
 
 ### Model Performance
 
-|    Class |  Precision |  Recall | F-Score | Support|
+|    Class |  Precision |  Recall | F1-Score | Support|
 |   --- |  ---: | ---: | ---: | ---:|
 |   1900-1998 |  67.66% | 57.38% | 62.10% | 474|
 |   1998-2003 |  46.68% | 42.27% | 44.37% | 466|
